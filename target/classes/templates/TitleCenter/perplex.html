@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwv.thymeLeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 禁止浏览器从本地机的缓存中调阅页面内容。 -->
+    <meta http-equiv="pragma" content="no-cache">
+    <!-- Cache-Control指定请求和响应遵循的缓存机制 -->
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <!-- 设定网页的到期时间。一旦网页过期，必须到服务器上重新调阅。 -->
+    <meta http-equiv="expires" content="-1, 26 Feb 1997 08:21:57 GMT">
+
+    <title>职称申报困扰</title>
+    <!--样式-->
+    <link rel="stylesheet" href="/layui/css/layui.css" media="all">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <!--js-->
+    <script src="/layui/layui.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <style>
+        .clyq {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .perplex {
+            display: block;
+            width: 100%;
+            height: 850px;
+        }
+
+        .perplex p {
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 5px;
+            margin: 40px 0;
+        }
+
+        .condition {
+            display: block;
+            width: 100%;
+            height: 650px;
+        }
+
+        .conditionul {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding-left: 100px;
+        }
+
+        .conditionul li:nth-child(1) {
+            background-image: url(../images/alarm_clock_103.57751277683px_1247573_easyicon.net.png);
+        }
+
+        .conditionul li:nth-child(2) {
+            background-image: url(../images/file_97.689948892675px_1307076_easyicon.net.png);
+        }
+
+        .conditionul li:nth-child(3) {
+            background-image: url(../images/price_tag_128px_1300130_easyicon.net.png);
+        }
+
+        .conditionul li:nth-child(4) {
+            background-image: url(../images/money_bag_99.287671232877px_1306890_easyicon.net.png);
+        }
+
+        .conditionul li:nth-child(5) {
+            background-image: url(../images/search_128px_1308582_easyicon.net.png);
+        }
+
+        .conditionul li:nth-child(6) {
+            background-image: url(../images/graduation_cap_140.70038910506px_1301533_easyicon.net.png);
+        }
+
+        .conditionul li {
+            display: inline-block;
+            float: left;
+            width: 310px;
+            height: 300px;
+            margin: 10px;
+            box-shadow: 0 0 15px 2px #f0f0f0;
+            background-repeat: no-repeat;
+            background-size: 110px;
+            background-position: 50% 35px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        a {
+            blr: expression(this.onFocus=this.blur());
+        }
+
+        .conditionul li span {
+            display: inline-block;
+            width: 85%;
+            height: 100px;
+            position: absolute;
+            bottom: 20px;
+            left: 7.5%;
+            font-size: 17px;
+            color: #494949;
+            font-weight: bold;
+        }
+
+        .perplex-bo {
+            display: block;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0 0 0;
+        }
+
+        .perplex-bo span {
+            display: block;
+            width: 580px;
+            height: 100%;
+            margin: 0 auto;
+            font-size: 18px;
+            color: #6ba4c1;
+            text-align: center;
+            line-height: 50px;
+            background-image: url(../images/300649bdece32d7689318b2646d16fba.jpeg);
+        }
+
+        .conditionul li span {
+            display: inline-block;
+            width: 85%;
+            height: 100px;
+            position: absolute;
+            bottom: 20px;
+            left: 7.5%;
+            font-size: 17px;
+            color: #494949;
+            font-weight: bold;
+        }
+
+        .conditionul li:hover {
+            transform: scale(1.06, 1.06);
+        }
+
+        #jiejue {
+            width: 100%;
+            height: 830px;
+            background: url(../images/zz.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+
+
+        }
+
+        .downloadul {
+            display: block;
+            width: 70%;
+            height: 330px;
+            margin-top: 50px;
+            padding-left: 200px;
+        }
+
+        .downloadul li {
+            display: inline-block;
+            float: left;
+            width: 380px;
+            height: 80px;
+            background: #262626;
+            margin: 10px;
+            position: relative;
+        }
+
+        .downloadul li span {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            background: #1f69fd;
+            transform: rotate(45deg);
+            top: calc(50% - 7.5px);
+            left: 50px;
+        }
+
+        .downloadul li div {
+            display: block;
+            width: 250px;
+            height: 25px;
+            line-height: 25px;
+            font-size: 20px;
+            color: #FFFFFF;
+            position: absolute;
+            top: calc(50% - 12.5px);
+            left: 80px;
+        }
+
+        .downloadul li:nth-child(1):after {
+            content: '01';
+            font-size: 23px;
+            color: #FFFFFF;
+            position: absolute;
+            top: -15px;
+            left: -8px;
+        }
+
+        .downloadul li:nth-child(2):after {
+            content: '02';
+            font-size: 23px;
+            color: #FFFFFF;
+            position: absolute;
+            top: -15px;
+            left: -8px;
+        }
+
+        .downloadul li:nth-child(3):after {
+            content: '03';
+            font-size: 23px;
+            color: #FFFFFF;
+            position: absolute;
+            top: -15px;
+            left: -8px;
+        }
+
+        .downloadul li:nth-child(4):after {
+            content: '04';
+            font-size: 23px;
+            color: #FFFFFF;
+            position: absolute;
+            top: -15px;
+            left: -8px;
+        }
+
+        .downloadul li:nth-child(5):after {
+            content: '05';
+            font-size: 23px;
+            color: #FFFFFF;
+            position: absolute;
+            top: -15px;
+            left: -8px;
+        }
+
+        .downloadul li:nth-child(6):after {
+            content: '06';
+            font-size: 23px;
+            color: #FFFFFF;
+            position: absolute;
+            top: -15px;
+            left: -8px;
+        }
+
+        .price {
+            margin: 0 auto;
+            width: 500px;
+            height: 250px;
+            background-color: #2ba4ff;
+            border-radius: 10px;
+            box-shadow: 0 0 2px 1px #c6cace;
+
+        }
+       .downloadul{
+
+           width: 1200px;
+           margin: 0 auto;
+       }
+
+        #biaodan {
+            position: relative;
+            right: 50px;
+            top: 30px;
+        }
+    </style>
+    <style>
+        .frame .head-box[data-v-7626485b] {
+            width: 100%;
+            display: flex;
+            z-index: 1;
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .frame .navigation_ul[data-v-7626485b] {
+            width: 1200px;
+            min-width: 1200px;
+            height: 40px;
+            margin: 10px auto 0;
+            padding-left: 0;
+            display: flex;
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+
+        .frame[data-v-7626485b] {
+            width: 100%;
+            font-family: Microsoft YaHei;
+            min-height: 669px;
+        }
+
+        .frame .dropdown[data-v-7626485b] {
+            text-align: center;
+            display: inline-block;
+            background-color: #2a65ef;
+            min-width: 220px;
+            padding: 11px 49px;
+        }
+
+        .frame .dropdown .service-img[data-v-7626485b] {
+            width: 14px;
+            height: 13px;
+            margin-left: 3px;
+        }
+
+        .frame .dropdown-content[data-v-7626485b] {
+            width: 100%;
+            display: none;
+            position: absolute;
+            background: rgba(12, 21, 38, .85);
+            color: #fff;
+            margin-top: 9px;
+            margin-left: -49px;
+            width: 220px;
+        }
+
+        .frame .otherPage[data-v-7626485b] {
+            display: block !important;
+        }
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        div {
+            display: block;
+        }
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+
+        .frame .dropdown-content .drop_down .class_title[data-v-7626485b] {
+            color: #ffc375;
+            padding-top: 20px;
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        user agent stylesheet
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+            margin: 8px 17px 0;
+            display: flex;
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        div {
+            display: block;
+        }
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+
+        .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+            width: 90px;
+            margin: 0 auto;
+            color: #dedede;
+            cursor: pointer;
+        }
+
+        element.style {
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+            width: 90px;
+            margin: 0 auto;
+            color: #dedede;
+            cursor: pointer;
+        }
+
+        .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+            margin: 8px 17px 0;
+            display: flex;
+        }
+
+        .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+            width: 90px;
+            margin: 0 auto;
+            color: #dedede;
+            cursor: pointer;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .activeTab[data-v-7626485b] {
+            color: #36a6fe;
+        }
+
+        .frame .navigation_ul .tab[data-v-7626485b] {
+            line-height: 40px;
+        }
+
+        .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+            display: none;
+            position: absolute;
+            background-color: #36a6fe;
+            color: #fff;
+            min-width: 163px;
+            z-index: 9999;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .navigation_ul .tab[data-v-7626485b] {
+            line-height: 40px;
+        }
+
+        .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+            display: none;
+            position: absolute;
+            background-color: #36a6fe;
+            color: #fff;
+            min-width: 163px;
+            z-index: 9999;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .navigation_ul .property-style[data-v-7626485b] {
+            line-height: 40px;
+            color: #222;
+            text-decoration: none;
+        }
+
+        .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+            display: none;
+            position: absolute;
+            background-color: #36a6fe;
+            color: #fff;
+            min-width: 163px;
+            z-index: 9999;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .navigation_ul .tab[data-v-7626485b] {
+            /* line-height: 40px; */
+        }
+
+        .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+            display: none;
+            position: absolute;
+            background-color: #36a6fe;
+            color: #fff;
+            min-width: 163px;
+            z-index: 9999;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .navigation_ul .tab[data-v-7626485b] {
+            line-height: 40px;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+    </style>
+    <style type="text/css">
+        .frame[data-v-7626485b] {
+            width: 100%;
+            font-family: Microsoft YaHei;
+            min-height: 669px
+        }
+
+        .frame .head-box[data-v-7626485b] {
+            width: 100%;
+            display: flex;
+            z-index: 1
+        }
+
+        .frame .dropdown[data-v-7626485b] {
+            text-align: center;
+            display: inline-block;
+            background-color: #2a65ef;
+            min-width: 220px;
+            padding: 11px 49px
+        }
+
+        .frame .dropdown .service-img[data-v-7626485b] {
+            width: 14px;
+            height: 13px;
+            margin-left: 3px
+        }
+
+        .frame .dropdown:hover .dropdown-content[data-v-7626485b] {
+            display: block
+        }
+
+        .frame .otherPage[data-v-7626485b] {
+            display: block !important
+        }
+
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center
+        }
+
+        .frame .dropdown-content .drop_down .class_title[data-v-7626485b] {
+            color: #ffc375;
+            padding-top: 20px
+        }
+
+        .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+            margin: 8px 17px 0;
+            display: flex
+        }
+
+        .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+            width: 90px;
+            margin: 0 auto;
+            color: #dedede;
+            cursor: pointer
+        }
+
+        .frame .activeStyle[data-v-7626485b] {
+            color: #fff;
+            background: #097ce1
+        }
+
+        .frame .activeTab[data-v-7626485b] {
+            color: #36a6fe
+        }
+
+        .frame .listSty[data-v-7626485b] {
+            background: #36a6fe
+        }
+
+        .frame .navigation_ul[data-v-7626485b] {
+            width: 1200px;
+            min-width: 1200px;
+            height: 40px;
+            margin: 10px auto 0;
+            padding-left: 0;
+            display: flex
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block
+        }
+
+        .frame .navigation_ul .tab[data-v-7626485b] {
+            line-height: 40px
+        }
+
+        .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+            display: none;
+            position: absolute;
+            background-color: #36a6fe;
+            color: #fff;
+            min-width: 163px;
+            z-index: 9999
+        }
+
+        .frame .navigation_ul .dropdown-navigation .drop_navigation[data-v-7626485b] {
+            cursor: pointer;
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            border-top: 1px solid #fff
+        }
+
+        .frame .navigation_ul .dropdown-navigation .drop_navigation[data-v-7626485b]:hover {
+            background: #097ce1
+        }
+
+        .frame .navigation_ul .property-style[data-v-7626485b] {
+            line-height: 40px;
+            color: #222;
+            text-decoration: none
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b]:hover {
+            color: #fff !important;
+            background: #36a6fe
+        }
+
+        .frame .navigation_ul .navigation:hover .dropdown-navigation[data-v-7626485b] {
+            display: block
+        }
+
+        .frame .navigation_ul .navigation:hover .property-style[data-v-7626485b] {
+            color: #fff
+        }
+
+        .frame .left_navigate[data-v-7626485b] {
+            position: fixed;
+            margin-left: 150px
+        }
+
+        .frame .left_navigate .left-box[data-v-7626485b]:hover {
+            background: #36a6fe
+        }
+
+        .frame .left_navigate .top[data-v-7626485b] {
+            padding: 9px;
+            cursor: pointer;
+            font-size: 14px;
+            background: #36a6fe
+        }
+
+        @media screen and (max-width: 1760px) {
+            .frame .left_navigate[data-v-7626485b] {
+                margin-left: 0
+            }
+        }
+
+        @media screen and (max-width: 1317px) {
+            .frame .left_navigate[data-v-7626485b] {
+                display: none
+            }
+        }
+    </style>
+    <style type="text/css">
+        .frame[data-v-a330e54a] {
+            font-size: 14px;
+            height: 46px
+        }
+
+        .frame[data-v-a330e54a], .frame .box[data-v-a330e54a] {
+            width: 100%;
+            background: #3d3e3e
+        }
+
+        .frame .box[data-v-a330e54a] {
+            position: fixed;
+            z-index: 9999
+        }
+
+        .frame .box .head-content[data-v-a330e54a] {
+            height: 50px;
+            line-height: 46px;
+            width: 1200px;
+            margin: 0 auto;
+            display: flex
+        }
+
+        .frame .box .head-content .choose[data-v-a330e54a] {
+            display: flex
+        }
+
+        .frame .box .head-content .choose .location[data-v-a330e54a] {
+            color: #fff;
+            width: 75px;
+            margin-left: 30px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1
+        }
+
+        .frame .search[data-v-a330e54a] {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 20px;
+            border: 1px solid #5d5d5d;
+            background-color: #5d5d5d;
+            color: #fff;
+            margin: auto 0 auto -100px;
+            padding-left: 30px
+        }
+
+        .frame .search[data-v-a330e54a], .frame .user-info[data-v-a330e54a] {
+            display: flex;
+            cursor: pointer
+        }
+
+        .frame .user-info .username[data-v-a330e54a] {
+            width: 75px;
+            color: #36a6fe;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1
+        }
+
+        .frame .search_input[data-v-a330e54a] {
+            color: #fff;
+            width: 314px;
+            height: 30px;
+            margin: auto 0;
+            border-radius: 20px;
+            background: #5d5d5d;
+            border: 1px solid #5d5d5d;
+            outline: one;
+            padding-left: 15px;
+            padding-right: 100px;
+            font-size: 16px;
+            overflow: hidden
+        }
+
+        .frame input[data-v-a330e54a]:focus {
+            outline: 0;
+            padding-left: 15px
+        }</style>
+    <style>
+        * html .box {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+<div data-v-a330e54a="" data-v-83b9ca0c="" class="frame">
+    <div data-v-a330e54a="" class="box" style="z-index: 19999">
+        <div data-v-a330e54a="" class="head-content">
+            <img data-v-a330e54a="" src="/images/logo_img_sc.png"
+                 style="width:150px;height: 50px; color: rgb(255, 255, 255); margin: auto 0px; cursor: pointer;">
+            <div data-v-a330e54a="" style="margin-left: 600px"class="choose">
+            </div>
+            <p data-v-a330e54a="" style="color: rgb(255, 255, 255); padding: 0px 30px; line-height: 46px;">服务热线：<span
+                    data-v-a330e54a=""
+                    style="color:#FF5722; font-size: 18px; font-weight: 500;">0551-6711-2826</span></p>
+            <div data-v-a330e54a="" style="display: flex; margin-left: 20px;">
+
+            </div>
+
+            <p data-v-a330e54a=""
+               style="color: rgb(255, 255, 255); padding-left: 30px; cursor: pointer; line-height: 46px;">莱米集团丨反馈</p>
+        </div>
+    </div>
+</div>
+
+<div data-v-7626485b="" data-v-83b9ca0c="" class="frame">
+    <div data-v-7626485b="" class="head-box">
+        <ul data-v-7626485b="" class="navigation_ul">
+            <div data-v-7626485b="" class="dropdown">
+                <span data-v-7626485b="" style="color: rgb(255, 255, 255);">服务分类</span>
+                <img data-v-7626485b=""
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAWAgMAAACu+BRhAAAACVBMVEUAAAD///////9zeKVjAAAAAnRSTlMAwO33D4gAAAAUSURBVAjXY8haBQIr4TSFgNbmAQANGRpf6mTrkQAAAABJRU5ErkJggg=="
+                     class="service-img">
+                <div style="z-index: 9999" data-v-7626485b="" class="dropdown-content otherPage">
+                    <div data-v-7626485b="" class="drop_down">
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">资质服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/Qualification/Case','_self')">资质案例</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/Qualification/agency','_self')">代办留言</p>
+                            </div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="">资质买卖</p> <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="">资质计算器</p></div>
+                        </div>
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">职称服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/List','_self')">一览表</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/Conditional_review','_self')">
+                                    条件审核</p></div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/perplex','_self')">申报困扰</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/Reporting_process','_self')">办理流程</p>
+                            </div>
+                        </div>
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">工程服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/user/Performance','_self')">工程业绩</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b=""></p></div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b=""></p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b=""></p></div>
+                        </div>
+                        <div data-v-7626485b=""><!---->
+                            <div data-v-7626485b="" class="option"><!----> <!----> <!----></div>
+                            <div data-v-7626485b="" class="option"><!----> <!----> <!----></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation activeTab">
+                <p data-v-7626485b="" class="tab" onclick="window.open('/','_self')">首页</p>
+                <div data-v-7626485b="" class="dropdown-navigation"></div>
+            </div>
+            <!--  <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab"></p>
+                  <div data-v-7626485b="" class="dropdown-navigation"></div>
+              </div>-->
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">资质服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation"  onclick="window.open('/Qualification/Case','_self')"><span data-v-7626485b="">资质案例</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/Qualification/agency','_self')"><span data-v-7626485b="">代办留言</span></div>
+                    <div data-v-7626485b="" class="drop_navigation"><span data-v-7626485b="">资质买卖</span></div>
+                    <div data-v-7626485b="" class="drop_navigation"><span data-v-7626485b="">资质计算器</span></div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">职称服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="dropdown-navigation">
+                        <div data-v-7626485b="" class="drop_navigation"  onclick="window.open('/TitleCenter/List','_self')"><span data-v-7626485b="">一览表</span></div>
+                        <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/Conditional_review','_self')"><span data-v-7626485b="">条件审核</span></div>
+                        <div data-v-7626485b="" class="drop_navigation  activeStyle" onclick="window.open('/TitleCenter/perplex','_self')"><span data-v-7626485b="">申报困扰</span></div>
+                        <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/Reporting_process','_self')"><span data-v-7626485b="">办理流程</span></div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">工程服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/user/Performance','_self')"><span data-v-7626485b="">工程业绩</span></div>
+
+                </div>
+            </div>
+
+            <div data-v-7626485b="" class="navigation">
+                <p data-v-7626485b="" onclick="window.open('/user/Contact_us','_self')" class="tab">联系我们</p>
+                <div data-v-7626485b="" class="dropdown-navigation"></div>
+            </div>
+        </ul>
+    </div>
+
+    <div data-v-d170166e="" data-v-7626485b="" class="home_frame">
+        <div data-v-d170166e="" class="top_img">
+            <div data-v-5497ad5a="" data-v-d170166e="" class="banner">
+                <div data-v-5497ad5a="" class="item"><img data-v-5497ad5a=""
+                                                          src="/images/index.jpg"
+                                                          style="width: 100%; height: 440px;"></div> <!----></div>
+        </div>
+    </div>
+    <div id="bj">
+        <div class="clyq">
+            <div class="perplex">
+                <p>职称申报困扰?</p>
+                <div class="condition">
+                    <ul class="conditionul">
+                        <li><a onclick="doyoo.util.openChat('g=10082616');return false;"
+                               style="cursor:pointer;display: block; width: 100%; height: 100%;"><span>条件符合想要申报，但是申报流程复杂，没有精力和时间，往往有心无力?</span></a>
+                        </li>
+                        <li><a onclick="doyoo.util.openChat('g=10082616');return false;"
+                               style="cursor:pointer;display: block; width: 100%; height: 100%;"><span>申报材料众多，很多都没有，不知道准备无从申报?</span></a>
+                        </li>
+                        <li><a onclick="doyoo.util.openChat('g=10082616');return false;"
+                               style="cursor:pointer;display: block; width: 100%; height: 100%;"><span>很多人觉得自己可以整理材料，但大部分材料远远达不到要求。最后浪费时间和精力不说，耽误了拿证时间?</span></a>
+                        </li>
+                        <li><a onclick="doyoo.util.openChat('g=10082616');return false;"
+                               style="cursor:pointer;display: block; width: 100%; height: 100%;"><span>有的人因为急需用到职称，就随便在网上用几百上千块去买，结果网上却查不到，费钱费时，最后还耽误工作</span></a>
+                        </li>
+                        <li><a onclick="doyoo.util.openChat('g=10082616');return false;"
+                               style="cursor:pointer;display: block; width: 100%; height: 100%;"><span>职称申报通过率太低了，一直评不上干脆就放弃了。那是因为你没有找对方法，申报材料不规范等因素导致</span></a>
+                        </li>
+                        <li><a onclick="doyoo.util.openChat('g=10082616');return false;"
+                               style="cursor:pointer;display: block; width: 100%; height: 100%;"><span>学历不够评不了，别人已经升职加薪了，自己只能停留在原地</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="perplex-bo">
+                    <span>如何解决这些困扰?别担心，莱米集团给你支招，助你轻松评职称</span>
+                </div>
+            </div>
+            <!-- <div><a onClick="doyoo.util.openChat('g=10082616');return false;" style="cursor:pointer"><img src="images/clyq.jpg"></a></div> -->
+        </div>
+    </div>
+    <div id="jiejue">
+       <br>
+        <br>
+        <div>
+            <span style="text-align:center;color:#ffffff;font-size: 28px;display: block;">针对学员困扰，莱米集团推出6大服务</span>
+            <span style="text-align:center;color:#ffffff;font-size: 18px;display: block;">省时省心省力，你离拿到职称更近一步
+    </span>
+            <ul class="downloadul">
+                <li><span></span>
+                    <div>全程一对一指导&nbsp;升级服务</div>
+                </li>
+                <li><span></span>
+                    <div>论文撰写发表服务</div>
+                </li>
+                <li><span></span>
+                    <div>业绩材料指导服务</div>
+                </li>
+                <li><span></span>
+                    <div>继续教育学时补录服务</div>
+                </li>
+                <li><span></span>
+                    <div>系统申报服务</div>
+                </li>
+                <li><span></span>
+                    <div>学历提升服务</div>
+                </li>
+            </ul>
+            <div class="price" style="text-align:center;">
+                <br>
+                <span style="color:#ffffff;font-size: 24px;">具体服务内容和办理费用咨询</span>
+                <div id="biaodan">
+                    <form class="layui-form"> <!-- 提示：如果你不想用form，你可以换成div等任何一个普通元素 -->
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <input style="width:400px;height:50px" type="text" name="advisory_number" placeholder="请输入手机号码"
+                                       lay-verify="required|phone" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button style="width:400px;height:50px" class="layui-btn layui-btn-warm" lay-submit
+                                        lay-filter="formDemo">获取价格表
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<script>
+    //Demo
+    layui.use('form', function () {
+        var form = layui.form;
+        form.render();
+        //监听提交
+        form.on('submit(formDemo)', function (data) {
+            //咨询手机号提交
+            $.ajax({
+                url:"/TitleCenter/addAdvisory",
+                type :'post',
+                data :data.field,
+                dataType:'json',
+                success : success,
+                error : error,
+            });
+            function success(data) {
+                if(data.addAdvisory == "true"){
+                    layer.msg('提交号码成功!',{
+                        icon: 1,
+                        time: 5000, //5s后自动关闭
+                    });
+                    $('.layui-form')[0].reset();
+                }else{
+                    layer.msg('提交号码失败!',{
+                        icon: 2,
+                        time: 5000, //5s后自动关闭
+                    });
+                    return false;
+                }
+            }
+            //请求失败回调函数
+            function error(date) {
+                layer.msg('请求失败,请联系管理员!',{
+                    icon: 2,
+                    time: 1000, //3s后自动关闭
+                });
+            }
+            return false;
+        });
+    });
+</script>
+
+<!--底部-->
+<div th:replace="Repeat/Bottom :: myfooter"></div>
+<!--右侧悬浮窗-->
+<div th:replace="Repeat/Right :: myfooter"></div>
+
+</body>
+</html>

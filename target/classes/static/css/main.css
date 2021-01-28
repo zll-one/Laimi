@@ -1,0 +1,850 @@
+/*
+-----------------------------------
+Main CSS File For 河北省职称代评中心
+Created & Modified by fanzjgw
+-----------------------------------
+*/
+/* 变量 */
+body,
+input,
+button,
+select,
+textarea {
+  font: 14px/1.5 'Microsoft Yahei', 'Aril', sans-serif;
+  color: #333;
+}
+body,
+ul,
+ol,
+li,
+dl,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form {
+  margin: 0;
+  padding: 0;
+}
+table {
+  empty-cells: show;
+  border-collapse: collapse;
+}
+caption,
+th {
+  text-align: left;
+  font-weight: 400;
+}
+em,
+cite,
+i {
+  font-style: normal;
+}
+a {
+  color: #c71721;
+  text-decoration: none;
+  outline: none;
+}
+a img {
+  border: none;
+}
+a:hover {
+  color: #711115;
+}
+:focus {
+  outline: 0;
+}
+textarea {
+  resize: none;
+}
+button {
+  border: none;
+}
+body {
+  background: #FFF;
+}
+ul {
+  list-style: none;
+}
+.wp {
+  width: 1200px;
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cl:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.cl {
+  zoom: 1;
+}
+.listStyle {
+  list-style: none;
+}
+.line {
+  content: "";
+  background: #d3d3d3;
+  width: 1px;
+  height: 18px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 19px 0 0 0;
+}
+.header {
+  background: #ba1b40;
+  color: #FFF;
+  text-align: center;
+}
+.header h2 {
+  padding: 20px 0;
+  font-size: 24px;
+}
+.banner {
+  background: #ffffff url(../images/banner_bg.jpg) no-repeat 50% 0;
+  text-align: center;
+  background-size: 100% 100%;
+}
+.banner .wp {
+  position: relative;
+}
+.banner dl {
+  color: #FFF;
+  padding: 20px 0 48px;
+}
+.banner dl dt {
+  font-size: 72px;
+  height: 140px;
+  line-height: 140px;
+  border-bottom: 1px dashed #bbb;
+  color: #FFF;
+  font-weight: 700;
+}
+.banner dl dd.info_01 {
+  font-size: 42px;
+  padding: 10px 0;
+}
+.banner dl dd.info_02 p {
+  margin: 0 auto;
+  width: 40%;
+  padding: 10px 0;
+  background: #f59332;
+  font-size: 24px;
+}
+.banner dl dd.info_03 {
+  text-align: center;
+  padding: 40px 0 40px;
+}
+.banner dl dd.info_03 span {
+  margin: 0 10px;
+  padding: 16px 15px 16px 70px;
+  border: 1px dashed #fff;
+  font-size: 20px;
+  background: url(../images/q7.png) no-repeat 0 50%;
+}
+.banner dl dd.btns a {
+  margin: 0 10px;
+  padding: 10px 30px;
+  background: #ba1b40;
+  border: 1px solid #ba1b40;
+  color: #FFF;
+  font-size: 24px;
+  border-radius: 30px;
+}
+.intro {
+  text-align: center;
+  background: url(../images/intro_bg.jpg) repeat 0 0;
+  color: #000;
+}
+.intro h2 {
+  font-size: 36px;
+  border-bottom: 4px solid #ba1b40;
+  padding: 30px 0;
+}
+.intro .wrap {
+  border-top: 1px solid #ba1b40;
+  margin-top: 1px;
+}
+.intro .tip {
+  margin: 20px auto;
+  width: 50%;
+}
+.intro .tip dt {
+  font-size: 32px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.intro .tip dd.intro_info {
+  background: #fdf9ee;
+  padding: 10px;
+  line-height: 28px;
+}
+.intro .tip dd.intro_info h4 {
+  font-size: 20px;
+}
+.intro ul {
+  margin: 0 auto;
+  width: 80%;
+}
+.intro ul li {
+  float: left;
+  width: 33%;
+  height: 120px;
+}
+.intro ul li p {
+  display: block;
+  height: 120px;
+  background: #eee;
+  border-bottom: 2px solid #ba1b40;
+  margin: 0 10px;
+}
+.intro ul li p strong {
+  display: block;
+  border-bottom: 1px solid #FFF;
+  padding: 10px 0;
+  color: #ba1b40;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.intro .btn_advisory {
+  padding: 40px;
+}
+.intro .btn_advisory a {
+  margin: 0 10px;
+  padding: 10px 30px;
+  background: #ba1b40;
+  border: 1px solid #ba1b40;
+  color: #FFF;
+  font-size: 24px;
+  border-radius: 30px;
+}
+.title {
+  text-align: center;
+  padding: 40px 0;
+}
+.title strong {
+  font-size: 40px;
+  color: #444444;
+}
+.title strong em {
+  color: #c71721;
+}
+.title p {
+  font-size: 20px;
+}
+.condition {
+  background: #555555 url(../images/condition_bg.jpg) no-repeat 50% 50%;
+  padding-bottom: 50px;
+  background-size: 100% 100%;
+}
+.condition .title strong {
+  color: #f3b72f;
+}
+.condition .title p {
+  color: #FFF;
+}
+.condition ul {
+  background: #FFF;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.condition li {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+.condition li p {
+  padding: 10px;
+  border-right: 1px dashed #eee;
+}
+.condition li p strong {
+  display: block;
+  background: #ba1b40;
+  color: #FFF;
+  padding: 10px 0;
+  font-size: 24px;
+}
+.condition li p span {
+  display: block;
+  height: 60px;
+  text-align: left;
+  padding: 20px;
+  font-size: 18px;
+  color: #333;
+}
+.condition li p img {
+  width: 100%;
+}
+.condition li p .btn {
+  display: block;
+  padding: 10px 0;
+  background: #f59332;
+  text-align: center;
+  color: #FFF;
+  font-size: 24px;
+}
+.condition li p .btn:hover {
+  background: #ba1b40;
+}
+.evaluation {
+  padding-bottom: 60px;
+  background: #ffffff url(../images/evaluation_bg.jpg) no-repeat 100% 0;
+}
+.evaluation form {
+  margin: 0 auto;
+  width: 600px;
+  border-top: 4px solid #ba1b40;
+  border-bottom: 1px solid #ba1b40;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+.evaluation dl dt {
+  font-size: 20px;
+  padding: 10px;
+}
+.evaluation dl dd {
+  padding: 0 10px;
+}
+.evaluation dl dd p {
+  padding-bottom: 10px;
+}
+.evaluation dl dd p input {
+  width: 90%;
+  height: 36px;
+  line-height: 36px;
+}
+.evaluation dl dd.btn {
+  padding: 0;
+}
+.evaluation dl dd.btn button {
+  width: 100%;
+  background: #1E9FFF;
+  padding: 6px;
+  color: #FFF;
+  font-size: 32px;
+}
+.questions {
+  background: #555555 url(../images/questions_bg.jpg) no-repeat 50% 50%;
+  background-size: 100% 100%;
+}
+.questions .title strong {
+  color: #f3b72f;
+}
+.questions .title p {
+  color: #FFF;
+}
+.questions .flex_list li {
+  float: left;
+  width: 25%;
+  padding-bottom: 20px;
+}
+.questions .flex_list li span {
+  display: block;
+  width: 88%;
+  padding: 100px 10px 10px;
+  margin: 0 auto;
+  border: 1px dashed #cecece;
+  text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  background-color: #111;
+  background-position: 50% 20px;
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+.questions .flex_list li span.one {
+  background-image: url(../images/q1.png);
+}
+.questions .flex_list li span.two {
+  background-image: url(../images/q2.png);
+}
+.questions .flex_list li span.three {
+  background-image: url(../images/q3.png);
+}
+.questions .flex_list li span.four {
+  background-image: url(../images/q4.png);
+}
+.questions .flex_list li span.five {
+  background-image: url(../images/q5.png);
+}
+.questions .flex_list li span.six {
+  background-image: url(../images/q6.png);
+}
+.questions .flex_list li span.seven {
+  background-image: url(../images/q7.png);
+}
+.questions .flex_list li span.eight {
+  background-image: url(../images/q8.png);
+}
+.questions .flex_list li span:hover {
+  background-color: #555;
+  border: 1px dashed #333;
+}
+.questions .btns {
+  overflow: hidden;
+  padding: 20px 0 40px;
+  text-align: center;
+}
+.questions .btns a {
+  display: inline-block;
+  margin: 0 10px;
+  border: 1px dashed #f3b72f;
+  color: #eee;
+  padding: 6px 30px;
+  border-radius: 40px;
+  font-size: 24px;
+}
+.questions .btns a.btn_message {
+  background: #f3b72f;
+}
+.questions .btns a.btn_message:hover {
+  background: #555;
+}
+.questions .btns a.btn_tel {
+  border: 1px dashed #1E9FFF;
+  background: #1E9FFF;
+}
+.questions .btns a.btn_tel:hover {
+  background: #555;
+}
+.job_title {
+  background: #ffffff;
+}
+.job_title .job_title_list li {
+  overflow: hidden;
+  position: relative;
+  padding-left: 160px;
+  margin-bottom: 10px;
+  background: #1E9FFF;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+.job_title .job_title_list li span {
+  float: left;
+  margin-left: -145px;
+  color: #FFF;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+}
+.job_title .job_title_list li p {
+  background: #FFF;
+  padding: 15px 80px 15px 20px;
+}
+.job_title .job_title_list li .action {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.job_title .job_title_list li:last-child {
+  line-height: 100px;
+}
+.job_title .btn_box {
+  padding: 40px 0;
+  text-align: center;
+}
+.job_title .btn_box span {
+  overflow: hidden;
+  display: inline-block;
+  padding-left: 10px;
+  border: 1px solid #01AAED;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 6px;
+}
+.job_title .btn_box span a {
+  display: block;
+  float: right;
+  margin-left: 10px;
+  text-align: center;
+  padding: 0 10px;
+  background: #01AAED;
+  color: #FFF;
+}
+.audit {
+  padding-bottom: 40px;
+}
+.audit .t_body {
+  background: #ffffff url(../images/audit_bg.jpg) no-repeat 20px -20px;
+}
+.audit .audit_list li {
+  overflow: hidden;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #EEE;
+  position: relative;
+  padding-left: 420px;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+.audit .audit_list li span {
+  float: left;
+  margin-left: -270px;
+  display: block;
+  width: 270px;
+  height: 120px;
+  line-height: 120px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #444444;
+}
+.audit .audit_list li p {
+  margin-top: 10px;
+  border-left: 2px solid #EEE;
+  display: block;
+  padding-left: 40px;
+  font-size: 18px;
+  line-height: 36px;
+}
+.audit .audit_list li em {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.audit .audit_list li em a {
+  display: inline-block;
+  margin-left: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  background: #f59332;
+  color: #FFF;
+  text-align: center;
+}
+.audit .audit_list li em a i {
+  display: block;
+  padding-top: 15px;
+}
+.audit .audit_list li em a.bm {
+  background: #c71721;
+}
+.audit .audit_list li:last-child {
+  border-bottom: none;
+}
+.advantage {
+  background: #555555 url(../images/advantage_bg.jpg) no-repeat 50% 50%;
+  padding-bottom: 60px;
+  background-size: 100% 100%;
+}
+.advantage .title strong {
+  color: #f3b72f;
+}
+.advantage .title p {
+  color: #FFF;
+}
+.advantage .advantage_list {
+  margin-bottom: 40px;
+}
+.advantage .advantage_list li {
+  float: left;
+  width: 33.3%;
+  padding-bottom: 10px;
+}
+.advantage .advantage_list li strong {
+  display: block;
+  font-size: 32px;
+  padding-bottom: 6px;
+}
+.advantage .advantage_list li p {
+  display: block;
+  width: 88%;
+  height: 120px;
+  padding: 10px 10px 10px;
+  margin: 0 auto;
+  border: 1px dashed #cecece;
+  text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  background-color: #111;
+  background-position: 50% 20px;
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+.advantage .btn {
+  text-align: center;
+}
+.advantage .btn a {
+  margin: 0 10px;
+  padding: 10px 30px;
+  background: #ba1b40;
+  border: 1px solid #ba1b40;
+  color: #FFF;
+  font-size: 24px;
+  border-radius: 30px;
+}
+.advisory {
+  background: #f59332;
+  padding-bottom: 40px;
+}
+.advisory .title {
+  padding: 20px 0;
+}
+.advisory .title strong {
+  color: #FFF;
+}
+.advisory .btns {
+  text-align: center;
+}
+.advisory .btns a {
+  margin: 0 10px;
+  padding: 10px 30px;
+  background: #ba1b40;
+  border: 1px solid #ba1b40;
+  color: #FFF;
+  font-size: 24px;
+  border-radius: 30px;
+}
+.copyright {
+  padding: 10px 0;
+}
+.copyright .wp {
+  text-align: center;
+}
+.copyright .wp p {
+  line-height: 24px;
+}
+.copyright .wp p a {
+  color: #7199c4;
+  padding: 0 10px;
+}
+.copyright .wp p a:last-child {
+  padding-right: 0;
+}
+@media (max-width: 767px) {
+  .wp {
+    width: 100%;
+    overflow: hidden;
+  }
+  .header h2 {
+    font-size: 18px;
+  }
+  .banner {
+    background: #f59332;
+  }
+  .banner dl dt {
+    font-size: 36px;
+    height: 80px;
+    line-height: 60px;
+  }
+  .banner dl dd.info_01 {
+    font-size: 24px;
+    padding: 10px 0;
+  }
+  .banner dl dd.info_02 p {
+    width: 96%;
+    font-size: 18px;
+    padding: 0;
+  }
+  .banner dl dd.info_03 {
+    overflow: hidden;
+    padding: 20px 0;
+  }
+  .banner dl dd.info_03 span {
+    float: left;
+    padding: 10px 0;
+    margin: 6px;
+    display: inline-bock;
+    width: 46%;
+    background: none;
+  }
+  .banner dl dd.btns a {
+    margin: 0 10px;
+    padding: 10px 30px;
+    background: #ba1b40;
+    border: 1px solid #ba1b40;
+    color: #FFF;
+    font-size: 24px;
+    border-radius: 30px;
+  }
+  .intro .tip {
+    width: 98%;
+  }
+  .intro ul {
+    margin: 0 auto;
+    width: 98%;
+  }
+  .intro ul li {
+    float: left;
+    width: 33%;
+    height: 120px;
+  }
+  .intro ul li p {
+    margin: 0 2px;
+  }
+  .intro ul li p strong {
+    font-size: 18px;
+  }
+  .title strong {
+    font-size: 28px;
+  }
+  .title p {
+    font-size: 16px;
+  }
+  .condition {
+    background: #555;
+    padding-bottom: 20px;
+  }
+  .condition ul {
+    background: none;
+  }
+  .condition li {
+    float: none;
+    width: 96%;
+    background-color: #FFF;
+    margin: 0 auto 10px;
+  }
+  .evaluation {
+    padding-bottom: 20px;
+  }
+  .evaluation form {
+    width: 98%;
+    border-left: none;
+    border-right: none;
+  }
+  .evaluation dl dt {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .evaluation dl dd {
+    padding: 0 10px;
+  }
+  .evaluation dl dd p input {
+    border: 1px solid #EEE;
+    width: 100%;
+  }
+  .evaluation dl dd.btn {
+    padding: 0;
+  }
+  .evaluation dl dd.btn button {
+    width: 100%;
+    background: #ba1b40;
+    padding: 6px;
+    color: #FFF;
+    font-size: 32px;
+  }
+  .questions {
+    background: #555;
+  }
+  .questions .flex_list {
+    margin: 0 auto;
+    width: 98%;
+  }
+  .questions .flex_list li {
+    float: left;
+    width: 50%;
+    padding-bottom: 10px;
+  }
+  .questions .flex_list li span {
+    font-size: 16px;
+  }
+  .questions .btns {
+    padding: 10px 0 30px;
+  }
+  .questions .btns a {
+    margin: 0 6px;
+    padding: 6px 20px;
+    font-size: 18px;
+  }
+  .job_title {
+    background: #ffffff;
+  }
+  .job_title .job_title_list {
+    margin: 0 auto;
+    width: 98%;
+  }
+  .job_title .job_title_list li {
+    padding-left: 0;
+    margin-bottom: 10px;
+    background: #c71721;
+  }
+  .job_title .job_title_list li span {
+    float: none;
+    margin-left: 0;
+    padding-left: 10px;
+  }
+  .job_title .job_title_list li span:first-child {
+    line-height: auto!important;
+  }
+  .job_title .job_title_list li p {
+    padding: 15px 20px 15px 20px;
+  }
+  .job_title .job_title_list li .action {
+    display: none;
+  }
+  .job_title .btn_box {
+    padding: 20px 0;
+  }
+  .audit {
+    padding-bottom: 20px;
+  }
+  .audit .t_body {
+    background: #ffffff url(../images/audit_bg.jpg) no-repeat 20px -20px;
+  }
+  .audit .audit_list li span {
+    float: left;
+    margin-left: -270px;
+    display: block;
+    width: 270px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 24px;
+  }
+  .audit .audit_list li p {
+    display: none;
+  }
+  .audit .audit_list li em {
+    display: none;
+  }
+  .advantage {
+    background: #555;
+    padding-bottom: 20px;
+  }
+  .advantage .advantage_list {
+    margin: 0 auto 20px;
+    width: 98%;
+  }
+  .advantage .advantage_list li {
+    float: left;
+    width: 50%;
+    padding-bottom: 4px;
+  }
+  .advantage .advantage_list li strong {
+    display: block;
+    font-size: 20px;
+    padding-bottom: 6px;
+  }
+  .advisory .btns a {
+    margin: 0 6px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  .copyright {
+    padding: 10px 0;
+  }
+  .copyright .wp {
+    text-align: center;
+  }
+  .copyright .wp p {
+    line-height: 24px;
+  }
+  .copyright .wp p a {
+    color: #7199c4;
+    padding: 0 10px;
+  }
+  .copyright .wp p a:last-child {
+    padding-right: 0;
+  }
+}

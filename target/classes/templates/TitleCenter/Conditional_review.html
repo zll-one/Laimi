@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://wwv.thymeLeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>职称评审</title>
+    <!--样式-->
+    <link rel="stylesheet" href="/layui/css/layui.css" media="all">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <!--js-->
+    <script src="/layui/layui.js"></script>
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <style>
+        #sh{
+            width: 100%;
+            height: 630px;
+            background: url(/images/01.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+        }
+    </style>
+    <style>
+        .frame .head-box[data-v-7626485b] {
+            width: 100%;
+            display: flex;
+            z-index: 1;
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .frame .navigation_ul[data-v-7626485b] {
+            width: 1200px;
+            min-width: 1200px;
+            height: 40px;
+            margin: 10px auto 0;
+            padding-left: 0;
+            display: flex;
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+
+        .frame[data-v-7626485b] {
+            width: 100%;
+            font-family: Microsoft YaHei;
+            min-height: 669px;
+        }
+
+        .frame .dropdown[data-v-7626485b] {
+            text-align: center;
+            display: inline-block;
+            background-color: #2a65ef;
+            min-width: 220px;
+            padding: 11px 49px;
+        }
+
+        .frame .dropdown .service-img[data-v-7626485b] {
+            width: 14px;
+            height: 13px;
+            margin-left: 3px;
+        }
+
+        .frame .dropdown-content[data-v-7626485b] {
+            width: 100%;
+            display: none;
+            position: absolute;
+            background: rgba(12, 21, 38, .85);
+            color: #fff;
+            margin-top: 9px;
+            margin-left: -49px;
+            width: 220px;
+        }
+
+        .frame .otherPage[data-v-7626485b] {
+            display: block !important;
+        }
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        div {
+            display: block;
+        }
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .frame .dropdown-content .drop_down .class_title[data-v-7626485b] {
+            color: #ffc375;
+            padding-top: 20px;
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        user agent stylesheet
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+            margin: 8px 17px 0;
+            display: flex;
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        div {
+            display: block;
+        }
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+            width: 90px;
+            margin: 0 auto;
+            color: #dedede;
+            cursor: pointer;
+        }
+
+        element.style {
+        }
+
+        *, :after, :before {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+            width: 90px;
+            margin: 0 auto;
+            color: #dedede;
+            cursor: pointer;
+        }
+
+        .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+            margin: 8px 17px 0;
+            display: flex;
+        }
+
+        .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+            width: 90px;
+            margin: 0 auto;
+            color: #dedede;
+            cursor: pointer;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .activeTab[data-v-7626485b] {
+            color: #36a6fe;
+        }
+
+        .frame .navigation_ul .tab[data-v-7626485b] {
+            line-height: 40px;
+        }
+
+        .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+            display: none;
+            position: absolute;
+            background-color: #36a6fe;
+            color: #fff;
+            min-width: 163px;
+            z-index: 9999;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .navigation_ul .tab[data-v-7626485b] {
+            line-height: 40px;
+        }
+
+        .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+            display: none;
+            position: absolute;
+            background-color: #36a6fe;
+            color: #fff;
+            min-width: 163px;
+            z-index: 9999;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .navigation_ul .property-style[data-v-7626485b] {
+            line-height: 40px;
+            color: #222;
+            text-decoration: none;
+        }
+
+        .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+            display: none;
+            position: absolute;
+            background-color: #36a6fe;
+            color: #fff;
+            min-width: 163px;
+            z-index: 9999;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .navigation_ul .tab[data-v-7626485b] {
+            /* line-height: 40px; */
+        }
+
+        .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+            display: none;
+            position: absolute;
+            background-color: #36a6fe;
+            color: #fff;
+            min-width: 163px;
+            z-index: 9999;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .frame .navigation_ul .tab[data-v-7626485b] {
+            line-height: 40px;
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+    </style>
+    <style type="text/css">
+        .frame[data-v-7626485b] {
+            width: 100%;
+            font-family: Microsoft YaHei;
+            min-height: 669px
+        }
+
+        .frame .head-box[data-v-7626485b] {
+            width: 100%;
+            display: flex;
+            z-index: 1
+        }
+
+        .frame .dropdown[data-v-7626485b] {
+            text-align: center;
+            display: inline-block;
+            background-color: #2a65ef;
+            min-width: 220px;
+            padding: 11px 49px
+        }
+
+        .frame .dropdown .service-img[data-v-7626485b] {
+            width: 14px;
+            height: 13px;
+            margin-left: 3px
+        }
+
+        .frame .dropdown:hover .dropdown-content[data-v-7626485b] {
+            display: block
+        }
+
+        .frame .otherPage[data-v-7626485b] {
+            display: block !important
+        }
+
+
+
+        .frame .dropdown-content .drop_down[data-v-7626485b] {
+            width: 100%;
+            height: 440px;
+            line-height: 20px;
+            font-size: 14px;
+            text-align: center
+        }
+
+        .frame .dropdown-content .drop_down .class_title[data-v-7626485b] {
+            color: #ffc375;
+            padding-top: 20px
+        }
+
+        .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+            margin: 8px 17px 0;
+            display: flex
+        }
+
+        .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+            width: 90px;
+            margin: 0 auto;
+            color: #dedede;
+            cursor: pointer
+        }
+
+        .frame .activeStyle[data-v-7626485b] {
+            color: #fff;
+            background: #097ce1
+        }
+
+        .frame .activeTab[data-v-7626485b] {
+            color: #36a6fe
+        }
+
+        .frame .listSty[data-v-7626485b] {
+            background: #36a6fe
+        }
+
+        .frame .navigation_ul[data-v-7626485b] {
+            width: 1200px;
+            min-width: 1200px;
+            height: 40px;
+            margin: 10px auto 0;
+            padding-left: 0;
+            display: flex
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b] {
+            min-width: 163px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block
+        }
+
+        .frame .navigation_ul .tab[data-v-7626485b] {
+            line-height: 40px
+        }
+
+        .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+            display: none;
+            position: absolute;
+            background-color: #36a6fe;
+            color: #fff;
+            min-width: 163px;
+            z-index: 9999
+        }
+
+        .frame .navigation_ul .dropdown-navigation .drop_navigation[data-v-7626485b] {
+            cursor: pointer;
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            border-top: 1px solid #fff
+        }
+
+        .frame .navigation_ul .dropdown-navigation .drop_navigation[data-v-7626485b]:hover {
+            background: #097ce1
+        }
+
+        .frame .navigation_ul .property-style[data-v-7626485b] {
+            line-height: 40px;
+            color: #222;
+            text-decoration: none
+        }
+
+        .frame .navigation_ul .navigation[data-v-7626485b]:hover {
+            color: #fff !important;
+            background: #36a6fe
+        }
+
+        .frame .navigation_ul .navigation:hover .dropdown-navigation[data-v-7626485b] {
+            display: block
+        }
+
+        .frame .navigation_ul .navigation:hover .property-style[data-v-7626485b] {
+            color: #fff
+        }
+
+        .frame .left_navigate[data-v-7626485b] {
+            position: fixed;
+            margin-left: 150px
+        }
+
+        .frame .left_navigate .left-box[data-v-7626485b]:hover {
+            background: #36a6fe
+        }
+
+        .frame .left_navigate .top[data-v-7626485b] {
+            padding: 9px;
+            cursor: pointer;
+            font-size: 14px;
+            background: #36a6fe
+        }
+
+        @media screen and (max-width: 1760px) {
+            .frame .left_navigate[data-v-7626485b] {
+                margin-left: 0
+            }
+        }
+
+        @media screen and (max-width: 1317px) {
+            .frame .left_navigate[data-v-7626485b] {
+                display: none
+            }
+        }
+    </style>
+    <style type="text/css">
+        .frame[data-v-a330e54a] {
+            font-size: 14px;
+            height: 46px
+        }
+
+        .frame[data-v-a330e54a], .frame .box[data-v-a330e54a] {
+            width: 100%;
+            background: #3d3e3e
+        }
+
+        .frame .box[data-v-a330e54a] {
+            position: fixed;
+            z-index: 9999
+        }
+
+        .frame .box .head-content[data-v-a330e54a] {
+            height: 50px;
+            line-height: 46px;
+            width: 1200px;
+            margin: 0 auto;
+            display: flex
+        }
+
+        .frame .box .head-content .choose[data-v-a330e54a] {
+            display: flex
+        }
+
+        .frame .box .head-content .choose .location[data-v-a330e54a] {
+            color: #fff;
+            width: 75px;
+            margin-left: 30px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1
+        }
+
+        .frame .search[data-v-a330e54a] {
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 20px;
+            border: 1px solid #5d5d5d;
+            background-color: #5d5d5d;
+            color: #fff;
+            margin: auto 0 auto -100px;
+            padding-left: 30px
+        }
+
+        .frame .search[data-v-a330e54a], .frame .user-info[data-v-a330e54a] {
+            display: flex;
+            cursor: pointer
+        }
+
+        .frame .user-info .username[data-v-a330e54a] {
+            width: 75px;
+            color: #36a6fe;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1
+        }
+
+        .frame .search_input[data-v-a330e54a] {
+            color: #fff;
+            width: 314px;
+            height: 30px;
+            margin: auto 0;
+            border-radius: 20px;
+            background: #5d5d5d;
+            border: 1px solid #5d5d5d;
+            outline: one;
+            padding-left: 15px;
+            padding-right: 100px;
+            font-size: 16px;
+            overflow: hidden
+        }
+
+        .frame input[data-v-a330e54a]:focus {
+            outline: 0;
+            padding-left: 15px
+        }</style>
+    <style>
+        #bd{
+            width:500px;
+            margin: 0 auto;
+
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div data-v-a330e54a="" data-v-83b9ca0c="" class="frame">
+    <div data-v-a330e54a="" class="box" style="z-index: 19999">
+        <div data-v-a330e54a="" class="head-content">
+            <img data-v-a330e54a="" src="/images/logo_img_sc.png"
+                 style="width:150px;height: 50px; color: rgb(255, 255, 255); margin: auto 0px; cursor: pointer;">
+            <div data-v-a330e54a="" style="margin-left: 600px"class="choose">
+            </div>
+            <p data-v-a330e54a="" style="color: rgb(255, 255, 255); padding: 0px 30px; line-height: 46px;">服务热线：<span
+                    data-v-a330e54a=""
+                    style="color:#FF5722; font-size: 18px; font-weight: 500;">0551-6711-2826</span></p>
+            <div data-v-a330e54a="" style="display: flex; margin-left: 20px;">
+
+            </div>
+
+            <p data-v-a330e54a=""
+               style="color: rgb(255, 255, 255); padding-left: 30px; cursor: pointer; line-height: 46px;">莱米集团丨反馈</p>
+        </div>
+    </div>
+</div>
+
+<div data-v-7626485b="" data-v-83b9ca0c="" class="frame">
+    <div data-v-7626485b="" class="head-box">
+        <ul data-v-7626485b="" class="navigation_ul">
+            <div data-v-7626485b="" class="dropdown">
+                <span data-v-7626485b="" style="color: rgb(255, 255, 255);">服务分类</span>
+                <img data-v-7626485b=""
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAWAgMAAACu+BRhAAAACVBMVEUAAAD///////9zeKVjAAAAAnRSTlMAwO33D4gAAAAUSURBVAjXY8haBQIr4TSFgNbmAQANGRpf6mTrkQAAAABJRU5ErkJggg=="
+                     class="service-img">
+                <div style="z-index: 9999" data-v-7626485b="" class="dropdown-content otherPage">
+                    <div data-v-7626485b="" class="drop_down">
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">资质服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/Qualification/Case','_self')">资质案例</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/Qualification/agency','_self')">代办留言</p>
+                            </div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="">资质买卖</p> <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="">资质计算器</p></div>
+                        </div>
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">职称服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/List','_self')">一览表</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/Conditional_review','_self')">
+                                    条件审核</p></div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/perplex','_self')">申报困扰</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/Reporting_process','_self')">办理流程</p>
+                            </div>
+                        </div>
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">工程服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/user/Performance','_self')">工程业绩</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b=""></p></div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b=""></p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b=""></p></div>
+                        </div>
+                        <div data-v-7626485b=""><!---->
+                            <div data-v-7626485b="" class="option"><!----> <!----> <!----></div>
+                            <div data-v-7626485b="" class="option"><!----> <!----> <!----></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation">
+                <p data-v-7626485b="" class="tab" onclick="window.open('/','_self')">首页</p>
+                <div data-v-7626485b="" class="dropdown-navigation"></div>
+            </div>
+            <!--  <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab"></p>
+                  <div data-v-7626485b="" class="dropdown-navigation"></div>
+              </div>-->
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">资质服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation"  onclick="window.open('/Qualification/Case','_self')"><span data-v-7626485b="">资质案例</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/Qualification/agency','_self')"><span data-v-7626485b="">代办留言</span></div>
+                    <div data-v-7626485b="" class="drop_navigation"><span data-v-7626485b="">资质买卖</span></div>
+                    <div data-v-7626485b="" class="drop_navigation"><span data-v-7626485b="">资质计算器</span></div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation  activeTab"><p data-v-7626485b="" class="tab">职称服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation"  onclick="window.open('/TitleCenter/List','_self')"><span data-v-7626485b="">一览表</span></div>
+                    <div data-v-7626485b="" class="drop_navigation activeStyle" onclick="window.open('/TitleCenter/Conditional_review','_self')"><span data-v-7626485b="">条件审核</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/perplex','_self')"><span data-v-7626485b="">申报困扰</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/Reporting_process','_self')"><span data-v-7626485b="">办理流程</span></div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">工程服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/user/Performance','_self')"><span data-v-7626485b="">工程业绩</span></div>
+
+                </div>
+            </div>
+
+            <div data-v-7626485b="" class="navigation">
+                <p data-v-7626485b="" onclick="window.open('/user/Contact_us','_self')" class="tab">联系我们</p>
+                <div data-v-7626485b="" class="dropdown-navigation"></div>
+            </div>
+        </ul>
+    </div>
+
+    <div data-v-d170166e="" data-v-7626485b="" class="home_frame">
+        <div data-v-d170166e="" class="top_img">
+            <div data-v-5497ad5a="" data-v-d170166e="" class="banner">
+                <div data-v-5497ad5a="" class="item"><img data-v-5497ad5a=""
+                                                          src="/images/index.jpg"
+                                                          style="width: 100%; height: 440px;">
+
+
+
+                </div> <!---->
+
+            </div>
+        </div>
+        <div id="sh">
+            <br>
+            <br>
+            <h1 style="text-align:center;font-size: 35px;font-weight: bold;letter-spacing: 5px;">职称评审条件审核通道</h1>
+            <div style="color: #FF5722;text-align:center;font-size: 18px;">*2019年条件放宽,不要错过申报机会</div>
+            <div id="bd" >
+                <br>
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">姓名</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">手机号码</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="number" required  lay-verify="required|phone" placeholder="请输入手机号码" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">您的学历</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="education" value="硕士及以上" title="硕士及以上">
+                            <input type="radio" name="education" value="研究生" title="研究生" >
+                            <input type="radio" name="education" value="本科" title="本科" >
+                            <input type="radio" name="education" value="专科" title="专科" >
+                            <input type="radio" name="education" value="中专" title="中专" >
+                            <input type="radio" name="education" value="中专以下" title="中专以下" >
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">您的毕业时长</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="graduation_time" value="3年以下" title="3年以下">
+                            <input type="radio" name="graduation_time" value="4年" title="4年" >
+                            <input type="radio" name="graduation_time" value="5年" title="5年" >
+                            <input type="radio" name="graduation_time" value="6年以上" title="6年以上" >
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">评审级别</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="review_level" value="助理职称" title="助理职称">
+                            <input type="radio" name="review_level" value="中级职称" title="中级职称" >
+                            <input type="radio" name="review_level" value="高级职称" title="高级职称" >
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <script>
+                //Demo
+                layui.use('form', function(){
+                    var form = layui.form;
+                    form.render();
+                    //监听提交
+                    form.on('submit(formDemo)', function(data){
+                        $.ajax({
+                            url:"/TitleCenter/addReview",
+                            type :'post',
+                            data :data.field,
+                            dataType:'json',
+                            success : success,
+                            error : error,
+                        });
+                        function success(data) {
+                            if(data.addReview == "true"){
+                                layer.msg('职称评审条件提交成功!',{
+                                    icon: 1,
+                                    time: 5000, //3s后自动关闭
+                                });
+                                $('.layui-form')[0].reset();
+                            }else{
+                                layer.msg('职称评审条件提交失败!',{
+                                    icon: 2,
+                                    time: 5000, //3s后自动关闭
+                                });
+                                return false;
+                            }
+                        }
+                        //请求失败回调函数
+                        function error(date) {
+                            layer.msg('请求失败,请联系管理员!',{
+                                icon: 2,
+                                time: 1000, //3s后自动关闭
+                            });
+                        }
+
+                        return false;
+                    });
+                });
+            </script>
+        </div>
+    </div>
+
+</div>
+
+<!--底部-->
+<div th:replace="Repeat/Bottom :: myfooter"></div>
+
+<!--右侧悬浮窗-->
+<div th:replace="Repeat/Right :: myfooter"></div>
+<script>
+    layui.use('element', function(){
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+        //监听导航点击
+        element.on('nav(demo)', function(elem){
+            //console.log(elem)
+            layer.msg(elem.text());
+        });
+    });
+</script>
+<script>
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            ,width: '100%' //设置容器宽度
+            ,height : '500px'
+            ,arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+</body>
+</html>

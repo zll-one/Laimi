@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwv.thymeLeaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工程业绩</title>
+</head>
+<link href="/css/index.css" rel="stylesheet" type="text/css">
+<style>
+    .frame .head-box[data-v-7626485b] {
+        width: 100%;
+        display: flex;
+        z-index: 1;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .frame .navigation_ul[data-v-7626485b] {
+        width: 1200px;
+        min-width: 1200px;
+        height: 40px;
+        margin: 10px auto 0;
+        padding-left: 0;
+        display: flex;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    .frame[data-v-7626485b] {
+        width: 100%;
+        font-family: Microsoft YaHei;
+        min-height: 669px;
+    }
+
+    .frame .dropdown[data-v-7626485b] {
+        text-align: center;
+        display: inline-block;
+        background-color: #2a65ef;
+        min-width: 220px;
+        padding: 11px 49px;
+    }
+
+    .frame .dropdown .service-img[data-v-7626485b] {
+        width: 14px;
+        height: 13px;
+        margin-left: 3px;
+    }
+
+    .frame .dropdown-content[data-v-7626485b] {
+        width: 100%;
+        display: none;
+        position: absolute;
+        background: rgba(12, 21, 38, .85);
+        color: #fff;
+        margin-top: 7px;
+        margin-left: -49px;
+        width: 220px;
+    }
+
+    .frame .otherPage[data-v-7626485b] {
+        display: block !important;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    div {
+        display: block;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
+    .frame .dropdown-content .drop_down .class_title[data-v-7626485b] {
+        color: #ffc375;
+        padding-top: 20px;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    user agent stylesheet
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+        margin: 8px 17px 0;
+        display: flex;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    div {
+        display: block;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer;
+    }
+
+    element.style {
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer;
+    }
+
+    .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+        margin: 8px 17px 0;
+        display: flex;
+    }
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .activeTab[data-v-7626485b] {
+        color: #36a6fe;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px;
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px;
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .property-style[data-v-7626485b] {
+        line-height: 40px;
+        color: #222;
+        text-decoration: none;
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        /* line-height: 40px; */
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+</style>
+<style type="text/css">
+    .frame[data-v-7626485b] {
+        width: 100%;
+        font-family: Microsoft YaHei;
+        min-height: 669px
+    }
+
+    .frame .head-box[data-v-7626485b] {
+        width: 100%;
+        display: flex;
+        z-index: 1
+    }
+
+    .frame .dropdown[data-v-7626485b] {
+        text-align: center;
+        display: inline-block;
+        background-color: #2a65ef;
+        min-width: 220px;
+        padding: 11px 49px
+    }
+
+    .frame .dropdown .service-img[data-v-7626485b] {
+        width: 14px;
+        height: 13px;
+        margin-left: 3px
+    }
+
+    .frame .dropdown:hover .dropdown-content[data-v-7626485b] {
+        display: block
+    }
+
+    .frame .otherPage[data-v-7626485b] {
+        display: block !important
+    }
+
+
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center
+    }
+
+    .frame .dropdown-content .drop_down .class_title[data-v-7626485b] {
+        color: #ffc375;
+        padding-top: 20px
+    }
+
+    .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+        margin: 8px 17px 0;
+        display: flex
+    }
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer
+    }
+
+    .frame .activeStyle[data-v-7626485b] {
+        color: #fff;
+        background: #097ce1
+    }
+
+    .frame .activeTab[data-v-7626485b] {
+        color: #36a6fe
+    }
+
+    .frame .listSty[data-v-7626485b] {
+        background: #36a6fe
+    }
+
+    .frame .navigation_ul[data-v-7626485b] {
+        width: 1200px;
+        min-width: 1200px;
+        height: 40px;
+        margin: 10px auto 0;
+        padding-left: 0;
+        display: flex
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999
+    }
+
+    .frame .navigation_ul .dropdown-navigation .drop_navigation[data-v-7626485b] {
+        cursor: pointer;
+        width: 100%;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        border-top: 1px solid #fff
+    }
+
+    .frame .navigation_ul .dropdown-navigation .drop_navigation[data-v-7626485b]:hover {
+        background: #097ce1
+    }
+
+    .frame .navigation_ul .property-style[data-v-7626485b] {
+        line-height: 40px;
+        color: #222;
+        text-decoration: none
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b]:hover {
+        color: #fff !important;
+        background: #36a6fe
+    }
+
+    .frame .navigation_ul .navigation:hover .dropdown-navigation[data-v-7626485b] {
+        display: block
+    }
+
+    .frame .navigation_ul .navigation:hover .property-style[data-v-7626485b] {
+        color: #fff
+    }
+
+    .frame .left_navigate[data-v-7626485b] {
+        position: fixed;
+        margin-left: 150px
+    }
+
+    .frame .left_navigate .left-box[data-v-7626485b]:hover {
+        background: #36a6fe
+    }
+
+    .frame .left_navigate .top[data-v-7626485b] {
+        padding: 9px;
+        cursor: pointer;
+        font-size: 14px;
+        background: #36a6fe
+    }
+
+    @media screen and (max-width: 1760px) {
+        .frame .left_navigate[data-v-7626485b] {
+            margin-left: 0
+        }
+    }
+
+    @media screen and (max-width: 1317px) {
+        .frame .left_navigate[data-v-7626485b] {
+            display: none
+        }
+    }
+</style>
+<style type="text/css">
+    .frame[data-v-a330e54a] {
+        font-size: 14px;
+        height: 46px
+    }
+
+    .frame[data-v-a330e54a], .frame .box[data-v-a330e54a] {
+        width: 100%;
+        background: #3d3e3e
+    }
+
+    .frame .box[data-v-a330e54a] {
+        position: fixed;
+        z-index: 9999
+    }
+
+    .frame .box .head-content[data-v-a330e54a] {
+        height: 50px;
+        line-height: 46px;
+        width: 1200px;
+        margin: 0 auto;
+        display: flex
+    }
+
+    .frame .box .head-content .choose[data-v-a330e54a] {
+        display: flex
+    }
+
+    .frame .box .head-content .choose .location[data-v-a330e54a] {
+        color: #fff;
+        width: 75px;
+        margin-left: 30px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1
+    }
+
+    .frame .search[data-v-a330e54a] {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 20px;
+        border: 1px solid #5d5d5d;
+        background-color: #5d5d5d;
+        color: #fff;
+        margin: auto 0 auto -100px;
+        padding-left: 30px
+    }
+
+    .frame .search[data-v-a330e54a], .frame .user-info[data-v-a330e54a] {
+        display: flex;
+        cursor: pointer
+    }
+
+    .frame .user-info .username[data-v-a330e54a] {
+        width: 75px;
+        color: #36a6fe;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1
+    }
+
+    .frame .search_input[data-v-a330e54a] {
+        color: #fff;
+        width: 314px;
+        height: 30px;
+        margin: auto 0;
+        border-radius: 20px;
+        background: #5d5d5d;
+        border: 1px solid #5d5d5d;
+        outline: one;
+        padding-left: 15px;
+        padding-right: 100px;
+        font-size: 16px;
+        overflow: hidden
+    }
+
+    .frame input[data-v-a330e54a]:focus {
+        outline: 0;
+        padding-left: 15px
+    }</style>
+<link href="/css/main.css" rel="stylesheet" type="text/css">
+
+<script src="/js/jquery-1.11.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".drop_down").hide();
+        $(".dropdown").mouseover(function(){
+            $(".drop_down").show();
+            $(".dropdown").mouseout(function(){
+                $(".drop_down").hide();
+            });
+        });
+    })
+</script>
+<body>
+<div data-v-a330e54a="" data-v-83b9ca0c="" class="frame">
+    <div data-v-a330e54a="" class="box" style="z-index: 19999">
+        <div data-v-a330e54a="" class="head-content">
+            <img data-v-a330e54a="" src="/images/logo_img_sc.png"
+                 style="width:150px;height: 50px; color: rgb(255, 255, 255); margin: auto 0px; cursor: pointer;">
+            <div data-v-a330e54a="" style="margin-left: 600px"class="choose">
+            </div>
+            <p data-v-a330e54a="" style="color: rgb(255, 255, 255); padding: 0px 30px; line-height: 46px;">服务热线：<span
+                    data-v-a330e54a=""
+                    style="color:#FF5722; font-size: 18px; font-weight: 500;">0551-6711-2826</span></p>
+            <div data-v-a330e54a="" style="display: flex; margin-left: 20px;">
+
+            </div>
+
+            <p data-v-a330e54a=""
+               style="color: rgb(255, 255, 255); padding-left: 30px; cursor: pointer; line-height: 46px;">莱米集团丨反馈</p>
+        </div>
+    </div>
+</div>
+
+<div data-v-7626485b="" data-v-83b9ca0c="" class="frame">
+    <div data-v-7626485b="" class="head-box">
+        <ul data-v-7626485b="" class="navigation_ul">
+            <div data-v-7626485b="" class="dropdown">
+                <span data-v-7626485b="" style="color: rgb(255, 255, 255);">服务分类</span>
+                <img data-v-7626485b=""
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAWAgMAAACu+BRhAAAACVBMVEUAAAD///////9zeKVjAAAAAnRSTlMAwO33D4gAAAAUSURBVAjXY8haBQIr4TSFgNbmAQANGRpf6mTrkQAAAABJRU5ErkJggg=="
+                     class="service-img">
+                <div style="z-index: 9999" data-v-7626485b="" class="dropdown-content otherPage">
+                    <div data-v-7626485b="" class="drop_down">
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">资质服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/Qualification/Case','_self')">资质案例</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/Qualification/agency','_self')">代办留言</p>
+                            </div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="">资质买卖</p> <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="">资质计算器</p></div>
+                        </div>
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">职称服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/List','_self')">一览表</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/Conditional_review','_self')">
+                                    条件审核</p></div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/perplex','_self')">申报困扰</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/Reporting_process','_self')">办理流程</p>
+                            </div>
+                        </div>
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">工程服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/user/Performance','_self')">工程业绩</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b=""></p></div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b=""></p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b=""></p></div>
+                        </div>
+                        <div data-v-7626485b=""><!---->
+                            <div data-v-7626485b="" class="option"><!----> <!----> <!----></div>
+                            <div data-v-7626485b="" class="option"><!----> <!----> <!----></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation">
+                <p data-v-7626485b="" class="tab" onclick="window.open('/','_self')">首页</p>
+                <div data-v-7626485b="" class="dropdown-navigation"></div>
+            </div>
+            <!--  <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab"></p>
+                  <div data-v-7626485b="" class="dropdown-navigation"></div>
+              </div>-->
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">资质服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation"  onclick="window.open('/Qualification/Case','_self')"><span data-v-7626485b="">资质案例</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/Qualification/agency','_self')"><span data-v-7626485b="">代办留言</span></div>
+                    <div data-v-7626485b="" class="drop_navigation"><span data-v-7626485b="">资质买卖</span></div>
+                    <div data-v-7626485b="" class="drop_navigation"><span data-v-7626485b="">资质计算器</span></div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">职称服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation"  onclick="window.open('/TitleCenter/List','_self')"><span data-v-7626485b="">一览表</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/Conditional_review','_self')"><span data-v-7626485b="">条件审核</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/perplex','_self')"><span data-v-7626485b="">申报困扰</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/Reporting_process','_self')"><span data-v-7626485b="">办理流程</span></div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation  activeTab"><p data-v-7626485b="" class="tab">工程服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation  activeStyle" onclick="window.open('/user/Performance','_self')"><span data-v-7626485b="">工程业绩</span></div>
+
+                </div>
+            </div>
+
+            <div data-v-7626485b="" class="navigation">
+                <p data-v-7626485b="" onclick="window.open('/user/Contact_us','_self')" class="tab">联系我们</p>
+                <div data-v-7626485b="" class="dropdown-navigation"></div>
+            </div>
+        </ul>
+    </div>
+
+    <div data-v-d170166e="" data-v-7626485b="" class="home_frame">
+        <div data-v-d170166e="" class="top_img">
+            <div data-v-5497ad5a="" data-v-d170166e="" class="banner">
+                <div data-v-5497ad5a="" class="item"><img data-v-5497ad5a=""
+                                                          src="/images/20210127145807.jpg"
+                                                          style="width: 100%; height: 440px;">
+
+
+
+                </div> <!---->
+
+            </div>
+        </div>
+
+        <div  class="job_title">
+            <div class="title">
+                <strong>工程业绩</strong>
+            </div>
+            <div class="t_body wp cl">
+                <ul class="job_title_list cl">
+                    <li>
+                        <span style="line-height: 100px">业绩重要吗?</span>
+                        <p style="line-height:16px">
+                            业绩，是建筑企业的“招牌”和“通行证”，是建筑企业的“命根子”。没有业绩，什么都无从谈起。资质申报、承接项目、招投标等环节能否顺利进行，企业业绩的考核举足轻重。企业业绩如何认定?
+                            企业的历史业绩和新开工项目，都属于企业业绩。但是这些业绩，是否都能成为企业的“有效业绩”呢?不一定!
+                            重磅消息/关于建筑企业如何在全国建筑市场监管公共服务平台补录“业绩”？
+                            10月，住建部在《关于简化建筑业企业资质标准部分指标的通知》(建市[2016]226号)中提到：
+                            对申请建筑工程、市政公用工程施工总承包特级、一级资质的企业，未进入全国建筑市场监管与诚信信息发布平台的企业业绩，不作为有效业绩认定。
+                            省级住房城乡建设主管部门要加强本地区工程项目数据库建设，完善数据补录办法。
+                        </p>
+                    </li>
+                    <li>
+                        <span style="line-height: 100px">严禁业绩造假</span>
+                        <p style="line-height:16px">
+                            企业应对填报的业绩信息和附件资料的真实性、完整性负责。<br>
+                            对有弄虚作假行为的企业，将按照《建设工程企业资质申报弄虚作假行为处理办法》(建市〔2011〕200号)有关规定，依法予以处理。
+                        </p>
+                    </li>
+                    <li>
+                        <span style="line-height: 100px">业绩的用途</span>
+                        <p style="line-height:16px">
+                            首先我们要搞清楚，录入的业绩是用作什么的?建筑企业业绩最大的作用在两方面：<br>
+                            1、是招投标过程中，为响应招标文件要求，体现企业管理能力和同类项目的施工经验，此可作为一种<br>
+                            2、是在企业资质中，体现出一种施工经验的累积，当你达到一定数量后，你可以向更高级别的资质申请;而我们现在所谓的录入，就是第二种，作为企业以后资质升级的一种。
+                        </p>
+                    </li>
+                    <li style="padding-left: 220px;">
+                        <span style="line-height: 100px;margin-left: -205px;" >需填报、上传的资料</span>
+                        <p style="line-height:16px" >
+                            企业在补录业绩信息时，必须严格如实详细填报六大信息;
+                            (1)项目基本信息
+                            (2)施工图审查信息
+                            (3)招投标信息
+                            (4)合同备案信息
+                            (5)施工许可信息
+                            (6)质量安全监督信息
+                            (7)竣工验收信息
+                            (8)各方责任主体信息
+                            以上信息要填报外，还需要上传以下资料：
+                            (1)中标(选)通知书
+                            (2)加盖合同备案章的合同
+                            (3)竣工验收报告
+                            (4)审计结算报告书
+                            (5)市政类别的项目还需要上传有技术指标的竣工图纸
+                            (6)承诺书，对上传上报资料的真实性作出承诺。
+                        </p>
+
+                    </li>
+                    <li style="padding-left: 240px;">
+                        <span style="line-height: 100px;margin-left: -225px;" >录入那些时间段的业绩</span>
+                        <p style="line-height:16px" >
+                            根据《建筑业企业资质标准》要求，建筑工程施工总承包(含建筑工程施工总承包序列下的专业承包)升级需要提供近五年完成的业绩，市政公用工程施工总承包(含建筑市政公用工程施工总承包序列下的专业承包)升级需要提供近十年完成的业绩，所以企业不用将所有业绩都录入进“全国建筑市场建管与诚信信息发布平台”而是根据企业的需要进行选择性的录入，毕竟录入一个项目需要的信息过于全面，会耗费企业太多的时间。
+                        </p>
+
+                    </li>
+                    <li style="padding-left: 290px;">
+                        <span style="line-height: 100px;margin-left: -280px;">四库一平台的业绩有什么用？</span>
+                        <p style="line-height:16px">
+                            建设部资质申报常见问题栏目中的《通用问题》对企业申办资质的业绩有规定，原文地址<a href="http://www.mohurd.gov.cn/zyglgd/spzlbzsm/201210/t20121023_211712.html" target="_blank"> http://www.mohurd.gov.cn/zyglgd/spzlbzsm/201210/t20121023_211712.html</a>
+                        </p>
+                    </li>
+                    <li style="padding-left: 400px;">
+                        <span style="line-height: 100px;margin-left: -385px;" >"超时"业绩不予认可,"时间"要特别注意</span>
+                        <p style="line-height:16px" >
+                            住建部在2015年颁布的《建筑业企业资质管理规定和资质标准实施意见》第四十条第8款中，规定：
+                            《建筑业企业资质标准》中要求的“近5年”或“近10年”，是指自申请资质年度起逆推5年或10年期间竣工的工程业绩。如：申报年度为2015年，“近5年”的业绩是指2010年1月1日之后竣工(交工)验收合格的项目。超过时限的代表工程业绩不予认可。
+                            11月30日，“全国建筑市场监管与诚信信息发布平台”更名为“全国建筑市场监管公共服务平台”(俗称“四库一平台”)后正式上线。
+                            因此，企业应将：前5年(2011年1月1日-2016年1月1日)的房屋建筑工程总承包业绩和前10年(2006年1月1日-2016年1月1日)的市政公用工程总承包业绩补录到“四库一平台”中。
+                        </p>
+                    </li>
+                </ul>
+            <!--    <div class="btn_box">
+                    <span><a href="https://yzf.qq.com/xv/web/static/chat/index.html?sign=37ef9b97867553c27311caec1ab2e237e9d632de2be81485e4a11639ce78c6ef93bb9e557e67ebbaa6fbab92b7d8eff0a74cc497" target="_blank">在线人工咨询更多</a><i>选定专业，助您一次申报成功</i></span>
+                </div>-->
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!--底部-->
+<div th:replace="Repeat/Bottom :: myfooter"></div>
+<!--右侧悬浮窗-->
+<div th:replace="Repeat/Right :: myfooter"></div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwv.thymeLeaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<!--头部-->
+<body>
+<div class="head" th:fragment="myfooter">
+    <style>
+        .layui-nav {
+            border-radius: 0px;
+            width: 100%;
+        }
+        .layui-nav-item{
+            left: 320px;
+        }
+        .layui-nav .layui-nav-item a {
+            display: block;
+            padding: 0 30px;
+        }
+        .layui-col-xs12{
+            width: 100%;
+        }
+        .layui-nav * {
+            font-size: 16px;
+        }
+   /* .layui-nav-child{
+      background-color:transparent;
+   }*/
+    </style>
+    <!--js-->
+    <script src="/layui/layui.js"></script>
+    <script>
+        layui.use('element', function(){
+            var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+            //监听导航点击
+            element.on('nav(demo)', function(elem){
+                //console.log(elem)
+                layer.msg(elem.text());
+            });
+        });
+    </script>
+    <div class="layui-row">
+        <div class="layui-col-xs12 layui-col-md8">
+            <div class="grid-demo grid-demo-bg1">
+                <ul class="layui-nav">
+                    <li class="layui-nav-item"><a href="">莱米集团</a></li>
+                    <li class="layui-nav-item"><a href="/index">首页</a></li>
+                    <li class="layui-nav-item layui-this">
+                        <a href="javascript:;">资质服务</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/Qualification/Case">资质案例</a></dd>
+                            <dd><a href="/Qualification/Business">资质买卖</a></dd>
+                            <dd><a href="/Qualification/agency">资质代办</a></dd>
+                            <dd><a href="/Qualification/Price_inquiry">资质计算器</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item"><a href="/Qualification/Project_performance">工程业绩</a></li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">职称中心</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/TitleCenter/List">一览表</a></dd>
+                            <dd><a href="/TitleCenter/Conditional_review">条件审核</a></dd>
+                            <dd><a href="/TitleCenter/perplex">申报困扰</a></dd>
+                            <dd><a href="/TitleCenter/Reporting_process">办理流程</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item"><a href="/user/Contact_us">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

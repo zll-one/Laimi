@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwv.thymeLeaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<!--右侧悬浮窗-->
+<body>
+<div class="right" th:fragment="myfooter">
+    <script src="/js/kefu.js"></script>
+    <!--客服代码-->
+    <script src="https://yzf.qq.com/xv/web/static/chat_sdk/yzf_chat.min.js"></script>
+    <script>
+        //参数说明
+        //sign：公司渠道唯一标识，复制即可，无需改动
+        //uid：用户唯一标识，如果没有则不填写，默认为空
+        //data：用于传递用户信息，最多支持5个，参数名分别为c1,c2,c3,c4,c5；默认为空
+        //selector：css选择器(document.querySelector, 如#btnid .chat-btn等)，用于替换默认的常驻客服入口
+        //callback(type, data): 回调函数,type表示事件类型， data表示事件相关数据
+        //type支持的类型：newmsg有新消息，error云智服页面发生错误， close聊天窗口关闭
+        window.yzf && window.yzf.init({
+            sign: '37ef9b97867553c27311caec1ab2e237e9d632de2be81485e4a11639ce78c6ef93bb9e557e67ebbaa6fbab92b7d8eff0a74cc497',
+            uid: '',
+            data: {
+                c1: '',
+                c2: '',
+                c3: '',
+                c4: '',
+                c5: ''
+            },
+            selector: '',
+            callback: function(type, data){}
+        })
+        //window.yzf.close() 关闭1已打开的回话窗口
+    </script>
+
+    <!--QQ客服-->
+    <script>
+        var kefu = new Kefu({
+            index: "/index",
+            tel: "18709821562",//电话号码
+            qq: "1152886175",//在线QQ
+            wechatPerson: {
+                state: true,// true是开启个人微信二维码, false不开启
+                imgURL: "/images/20210128164047.jpg"
+            },
+            wechatofficial: {
+                state: true,// true是开启微信公众号二维码, false不开启
+                imgURL: "/gh_e3115eaadea8_258.jpg"
+            }//微信公众号
+        });
+    </script>
+</div>
+</body>
+</html>
+</html>

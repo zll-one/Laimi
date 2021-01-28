@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwv.thymeLeaf.org">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>莱米集团</title>
+    <!--图标-->
+    <link href="" rel="shortcut icon">
+    <!--样式-->
+    <link rel="stylesheet" href="/layui/css/layui.css" media="all">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link href="/css/global.css" rel="stylesheet" type="text/css">
+    <script src="/js/jquery-1.11.1.min.js"></script>
+</head>
+<style>
+    .frame .head-box[data-v-7626485b] {
+        width: 100%;
+        display: flex;
+        z-index: 1;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .frame .navigation_ul[data-v-7626485b] {
+        width: 1200px;
+        min-width: 1200px;
+        height: 40px;
+        margin: 10px auto 0;
+        padding-left: 0;
+        display: flex;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    .frame[data-v-7626485b] {
+        width: 100%;
+        font-family: Microsoft YaHei;
+        min-height: 669px;
+    }
+
+    .frame .dropdown[data-v-7626485b] {
+        text-align: center;
+        display: inline-block;
+        background-color: #2a65ef;
+        min-width: 220px;
+        padding: 11px 49px;
+    }
+
+    .frame .dropdown .service-img[data-v-7626485b] {
+        width: 14px;
+        height: 13px;
+        margin-left: 3px;
+    }
+
+    .frame .dropdown-content[data-v-7626485b] {
+        width: 100%;
+        display: none;
+        position: absolute;
+        background: rgba(12, 21, 38, .85);
+        color: #fff;
+        margin-top: 5px;
+        margin-left: -49px;
+        width: 220px;
+    }
+
+    .frame .otherPage[data-v-7626485b] {
+        display: block !important;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    div {
+        display: block;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
+    .frame .dropdown-content .drop_down .class_title[data-v-7626485b] {
+        color: #ffc375;
+        padding-top: 20px;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    user agent stylesheet
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+        margin: 8px 17px 0;
+        display: flex;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    div {
+        display: block;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer;
+    }
+
+    element.style {
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer;
+    }
+
+    .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+        margin: 8px 17px 0;
+        display: flex;
+    }
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .activeTab[data-v-7626485b] {
+        color: #36a6fe;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px;
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px;
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .property-style[data-v-7626485b] {
+        line-height: 40px;
+        color: #222;
+        text-decoration: none;
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        /* line-height: 40px; */
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+</style>
+<style type="text/css">
+    .frame[data-v-7626485b] {
+        width: 100%;
+        font-family: Microsoft YaHei;
+        min-height: 669px
+    }
+
+    .frame .head-box[data-v-7626485b] {
+        width: 100%;
+        display: flex;
+        z-index: 1
+    }
+
+    .frame .dropdown[data-v-7626485b] {
+        text-align: center;
+        display: inline-block;
+        background-color: #2a65ef;
+        min-width: 220px;
+        padding: 11px 49px
+    }
+
+    .frame .dropdown .service-img[data-v-7626485b] {
+        width: 14px;
+        height: 13px;
+        margin-left: 3px
+    }
+
+    .frame .dropdown:hover .dropdown-content[data-v-7626485b] {
+        display: block
+    }
+
+    .frame .otherPage[data-v-7626485b] {
+        display: block !important
+    }
+
+
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center
+    }
+
+    .frame .dropdown-content .drop_down .class_title[data-v-7626485b] {
+        color: #ffc375;
+        padding-top: 20px
+    }
+
+    .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+        margin: 8px 17px 0;
+        display: flex
+    }
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer
+    }
+
+    .frame .activeStyle[data-v-7626485b] {
+        color: #fff;
+        background: #097ce1
+    }
+
+    .frame .activeTab[data-v-7626485b] {
+        color: #36a6fe
+    }
+
+    .frame .listSty[data-v-7626485b] {
+        background: #36a6fe
+    }
+
+    .frame .navigation_ul[data-v-7626485b] {
+        width: 1200px;
+        min-width: 1200px;
+        height: 40px;
+        margin: 10px auto 0;
+        padding-left: 0;
+        display: flex
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999
+    }
+
+    .frame .navigation_ul .dropdown-navigation .drop_navigation[data-v-7626485b] {
+        cursor: pointer;
+        width: 100%;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        border-top: 1px solid #fff
+    }
+
+    .frame .navigation_ul .dropdown-navigation .drop_navigation[data-v-7626485b]:hover {
+        background: #097ce1
+    }
+
+    .frame .navigation_ul .property-style[data-v-7626485b] {
+        line-height: 40px;
+        color: #222;
+        text-decoration: none
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b]:hover {
+        color: #fff !important;
+        background: #36a6fe
+    }
+
+    .frame .navigation_ul .navigation:hover .dropdown-navigation[data-v-7626485b] {
+        display: block
+    }
+
+    .frame .navigation_ul .navigation:hover .property-style[data-v-7626485b] {
+        color: #fff
+    }
+
+    .frame .left_navigate[data-v-7626485b] {
+        position: fixed;
+        margin-left: 150px
+    }
+
+    .frame .left_navigate .left-box[data-v-7626485b]:hover {
+        background: #36a6fe
+    }
+
+    .frame .left_navigate .top[data-v-7626485b] {
+        padding: 9px;
+        cursor: pointer;
+        font-size: 14px;
+        background: #36a6fe
+    }
+
+    @media screen and (max-width: 1760px) {
+        .frame .left_navigate[data-v-7626485b] {
+            margin-left: 0
+        }
+    }
+
+    @media screen and (max-width: 1317px) {
+        .frame .left_navigate[data-v-7626485b] {
+            display: none
+        }
+    }
+</style>
+<style>
+    .home_frame .top_img[data-v-d170166e] {
+        width: 100%;
+        height: 440px;
+    }
+
+    .banner[data-v-5497ad5a] {
+        width: 100%;
+        min-width: 1200px;
+        height: 440px;
+        margin: 0 auto;
+    }
+
+    .banner[data-v-5497ad5a], ul li[data-v-5497ad5a] {
+        cursor: pointer;
+    }
+
+    .banner[data-v-5497ad5a], ul li[data-v-5497ad5a] {
+        cursor: pointer;
+    }
+
+    .frame[data-v-7626485b] {
+        width: 100%;
+        font-family: Microsoft YaHei;
+        min-height: 669px;
+    }
+
+    .banner img[data-v-5497ad5a] {
+        width: 100%;
+        display: block;
+    }
+
+    .banner[data-v-5497ad5a], ul li[data-v-5497ad5a] {
+        cursor: pointer;
+    }
+
+</style>
+<style>
+    #ding {
+        height: 40px;
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+
+    #login {
+        height: 100px;
+        width: 100%;
+        background-color: #ffffff;
+
+    }
+
+    .serwrap2 {
+        height: auto;
+        margin: 0 auto;
+        width: 1250px;
+    }
+
+    .service-list2 {
+        width: 100%;
+        margin: 20px 0px 15px 25px;
+    }
+
+    .service-list2 li {
+        height: 260px;
+        margin-bottom: 10px;
+        margin-right: 75px;
+        width: 155px;
+        float: left;
+    }
+
+    .tc {
+        text-align: center;
+    }
+
+    service-list2 li a {
+        color: #0085da;
+        display: block;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .pb10 {
+        padding-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4e4e4e;
+    }
+
+    .service-list2 li .t1 {
+        background: rgba(0, 0, 0, 0) url(../images/tp1.png) no-repeat scroll left top;
+    }
+
+    .service-list2 li .t2 {
+        background: url(../images/tp1.png) no-repeat -206px top;
+    }
+
+    .service-list2 li .t5 {
+        background: url(../images/tp1.png) no-repeat right top;
+    }
+
+    .service-list2 li .t6 {
+        background: url(../images/tp2_hover.png) no-repeat left top;
+    }
+
+    .service-list2 li .t7 {
+        background: url(../images/tp2_hover.png) no-repeat -206px top;
+    }
+
+    .service-list2 li .t9 {
+        background: url(../images/tp2_hover.png) no-repeat -620px top;
+    }
+
+    .service-list2 li .t3 {
+        background: url(../images/tp1.png) no-repeat -413px top;
+    }
+
+    .service-list2 li .t4 {
+        background: url(../images/tp1.png) no-repeat -620px top;
+    }
+
+    .service-list2 li .t10 {
+        background: url(../images/tp2_hover.png) no-repeat right top;
+    }
+
+    .service-list2 li .t8 {
+        background: url(../images/tp2_hover.png) no-repeat -413px top;
+    }
+
+    .service-list2 li .t1:hover {
+        background: url("../images/tp1_hover.png") no-repeat left top;
+    }
+
+    .service-list2 li .t2:hover {
+        background: url("../images/tp1_hover.png") no-repeat -206px top;
+    }
+
+    .service-list2 li .t3:hover {
+        background: url("../images/tp1_hover.png") no-repeat -413px top;
+    }
+
+    .service-list2 li .t4:hover {
+        background: url("../images/tp1_hover.png") no-repeat -620px top;
+    }
+
+    .service-list2 li .t5:hover {
+        background: url("../images/tp1_hover.png") no-repeat right top;
+    }
+
+    .service-list2 li .t6:hover {
+        background: url("../images/tp2.png") no-repeat left top;
+    }
+
+    .service-list2 li .t7:hover {
+        background: url("../images/tp2.png") no-repeat -206px top;
+    }
+
+    .service-list2 li .t8:hover {
+        background: url("../images/tp2.png") no-repeat -413px top;
+    }
+
+    .service-list2 li .t9:hover {
+        background: url("../images/tp2.png") no-repeat -620px top;
+    }
+
+    .service-list2 li .t10:hover {
+        background: url("../images/tp2.png") no-repeat right top;
+    }
+
+    .service-list2 li .pic {
+        display: block;
+        height: 122px;
+        width: 141px;
+        padding-bottom: 10px;
+    }
+
+    .in-b {
+        display: inline-block;
+    }
+
+    .ti {
+        text-indent: -999999px;
+    }
+
+    .service-list2 li p {
+        color: #868787;
+        line-height: 18px;
+        font-size: 12px;
+        text-indent: 0em;
+        text-align: left;
+    }
+
+    .service-list2 li a {
+        color: #0085da;
+        display: block;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    .tc {
+        text-align: center;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .advantage {
+        padding: 42px 0 0px;
+    }
+
+    .advantage h2 {
+        color: #333;
+        font-size: 32px;
+        font-weight: normal;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .advantage h2 span {
+        display: block;
+        color: #b2b2b2;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+
+</style>
+<style>
+    .gszc-main {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 1300px;
+    }
+
+    .gszc-ul5 {
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .gszc-ul5 li {
+        display: inline;
+        float: left;
+        margin-right: 20px;
+        width: 281px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    li, dt, dd {
+        list-style: none;
+    }
+
+    .gszc-ul5 li b {
+        background: #1E9FFF none repeat scroll 0 0;
+        color: #ffffff;
+        display: block;
+        font-size: 22px;
+        font-weight: normal;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .gszc-ul5 li p {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-color: currentcolor #f0f0f0 #f0f0f0;
+        border-image: none;
+        border-style: none solid solid;
+        border-width: medium 1px 1px;
+        color: #616161;
+        font-size: 14px;
+        height: 299px;
+        line-height: 35px;
+        padding: 10px 0 0 20px;
+        width: 281px;
+        text-indent: 0px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4e4e4e;
+    }
+
+    .zixuna {
+        background: #c5c5c5 none repeat scroll 0 0;
+        border-radius: 5px;
+        color: #ffffff;
+        display: block;
+        font-size: 14px;
+        line-height: 32px;
+        margin: 10px auto;
+        text-align: center;
+        width: 114px;
+    }
+
+    .gszc-ul5 li {
+        display: inline;
+        float: left;
+        margin-right: 20px;
+        width: 281px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .gszc-ul5 li.last {
+        margin-right: 0;
+    }
+
+    .gszc-ul5 li {
+        display: inline;
+        float: left;
+        margin-right: 20px;
+        width: 281px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    li, dt, dd {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4e4e4e;
+    }
+
+    a {
+        text-decoration: none;
+        color: #666;
+    }
+
+</style>
+<style type="text/css">
+    .frame[data-v-d403c2f4]{font-size:14px}.head[data-v-d403c2f4]{color:#767676;background:#efefef}.location[data-v-d403c2f4]{width:1200px;margin:0 auto;height:36px;line-height:36px}.choose[data-v-d403c2f4],.location[data-v-d403c2f4]{display:flex}.icon-sty[data-v-d403c2f4]{color:#333;width:75px;text-overflow:ellipsis;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1}.change-city[data-v-d403c2f4]{color:#afafaf;font-size:12px;padding:0 10px;cursor:pointer;position:relative}.change-city:hover .province[data-v-d403c2f4]{display:block;background:#dbdbdb}.province[data-v-d403c2f4]{width:300px}.province-box[data-v-d403c2f4]{display:grid;grid-template-columns:20% 20% 20% 20% 20%;text-align:center;line-height:30px}.province-name[data-v-d403c2f4]{min-width:60px;padding:2px 5x;cursor:pointer;text-overflow:ellipsis;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1}.province-name[data-v-d403c2f4]:hover{color:#fff;background:#36a6fe}.headimg[data-v-d403c2f4]{cursor:pointer;border:1px solid #666;margin-left:21px;border-radius:50%;width:40px;height:40px}.user-info[data-v-d403c2f4]{cursor:pointer;width:75px;line-height:40px;margin-left:5px;margin-right:5px;text-overflow:ellipsis;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1}.link[data-v-d403c2f4]{color:#666;text-decoration:none;cursor:pointer}.search[data-v-d403c2f4]{width:130px;background-color:#36a6fe;color:#fff;margin:auto 0 auto -130px;padding-top:5px;cursor:pointer}.search[data-v-d403c2f4],.search_input[data-v-d403c2f4]{height:44px;border-radius:22px;border:1px solid #36a6fe;font-size:14px}.search_input[data-v-d403c2f4]{width:100%;outline:one;padding-left:15px;padding-right:130px;overflow:hidden;margin:auto 0}.hot-search[data-v-d403c2f4]{border-radius:15px;font-size:12px;height:20px;padding:0 16px;text-align:center;line-height:20px;background:#f2f2f2;margin-left:10px;color:#666;cursor:pointer}.searchStyle[data-v-d403c2f4]{background:#36a6fe;color:#fff}input[data-v-d403c2f4]:focus{outline:0;padding-left:15px}.hot-search-span[data-v-d403c2f4]{width:70px;margin-left:5px;font-size:14px;color:#666}.no-login[data-v-d403c2f4]{color:#36a6fe}.userinfo-btn[data-v-d403c2f4]{font-size:14px;padding:2px 4px;cursor:pointer}.userinfo-btn[data-v-d403c2f4]:hover{background:#36a6fe;color:#fff}.account-info[data-v-d403c2f4]{text-align:right;margin-left:20px}</style>
+<style>
+    .f1Bg {
+        background: #f6f7fa url(../images/regist_bg.jpg) no-repeat center bottom;
+    }
+
+    .block {
+        position: relative;
+        width: 100%;
+    }
+
+    .item2 {
+        margin: 0 auto;
+        position: relative;
+        width: 1300px;
+    }
+
+    .registration {
+        padding: 44px 0 40px;
+    }
+
+    .registration h2 {
+        color: #333;
+        font-size: 32px;
+        font-weight: normal;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .registration h2 span {
+        display: block;
+        color: #b2b2b2;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+    }
+
+    .registration ul {
+        height: 712px;
+        padding-top: 46px;
+    }
+
+    .registration li.first {
+        width: 468px;
+        background-color: transparent;
+    }
+
+    .registration li {
+        float: left;
+        position: relative;
+        width: 224px;
+        height: 336px;
+        margin: 0 20px 20px 0;
+        background-color: #fefeff;
+        transition: all .3s;
+        cursor: pointer;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .registration li h3 {
+        padding-top: 35px;
+        color: #959595;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 24px;
+    }
+
+    .registration li h3 span {
+        display: block;
+        color: #333;
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .registration li.first p {
+        bottom: 128px;
+        width: 300px;
+        color: #949494;
+        font-size: 16px;
+        text-transform: uppercase;
+        line-height: 22px;
+        text-align: left;
+    }
+
+    .registration li p {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 64px;
+        color: #3d3d3d;
+        font-size: 24px;
+        line-height: 64px;
+        text-align: center;
+    }
+
+    .registration li .addBtn {
+        position: absolute;
+        left: 0;
+        bottom: 100px;
+        width: 27px;
+        height: 27px;
+        background-position: -600px 0;
+        overflow: hidden;
+    }
+
+    .bgImg {
+        background: rgba(0, 0, 0, 0) url(../images/bgImg.png) no-repeat scroll 0 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4e4e4e;
+    }
+
+    .registration li {
+        float: left;
+        position: relative;
+        width: 224px;
+        height: 336px;
+        margin: 0 20px 20px 0;
+        background-color: #fefeff;
+        transition: all .3s;
+        cursor: pointer;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .registration li.i1 .num {
+        background-position: -640px 0;
+    }
+
+    .registration li .num {
+        position: absolute;
+        width: 42px;
+        height: 32px;
+        top: 18px;
+        left: 14px;
+        line-height: 120px;
+        overflow: hidden;
+    }
+
+    .bgImg {
+        background: rgba(0, 0, 0, 0) url(../images/bgImg.png) no-repeat scroll 0 0;
+    }
+
+    .bgImg {
+        background: rgba(0, 0, 0, 0) url(../images/bgImg.png) no-repeat scroll 0 0;
+    }
+
+    .bgImg {
+        background: rgba(0, 0, 0, 0) url(../images/bgImg.png) no-repeat scroll 0 0;
+    }
+
+    .icon {
+        background: url(../images/icon.png) no-repeat;
+        display: inline-block;
+    }
+
+    .registration li.i2 .num {
+        background-position: -690px 0;
+    }
+
+    .registration li .num {
+        position: absolute;
+        width: 42px;
+        height: 32px;
+        top: 18px;
+        left: 14px;
+        line-height: 120px;
+        overflow: hidden;
+    }
+
+    .registration li.i3 .num {
+        background-position: -740px 0;
+    }
+
+    .registration li.i4 .num {
+        background-position: -790px 0;
+    }
+
+    .registration li.i5 .num {
+        background-position: -640px -40px;
+    }
+
+    .registration li.i6 .num {
+        background-position: -690px -40px;
+    }
+
+    .registration li.i7 .num {
+        background-position: -740px -40px;
+    }
+
+    .registration li.i8 .num {
+        background-position: -790px -40px;
+    }
+
+    .bgImg {
+        background: rgba(0, 0, 0, 0) url(../images/bgImg.png) no-repeat scroll 0 0;
+    }
+
+    .registration li.i1 .icon {
+        width: 86px;
+        height: 112px;
+        margin: 112px auto 0;
+        background-position: 0 -320px;
+    }
+
+    .registration li .icon {
+        display: block;
+    }
+
+    .bgImg {
+        background: rgba(0, 0, 0, 0) url(../images/bgImg.png) no-repeat scroll 0 0;
+    }
+
+    .bgImg {
+        background: rgba(0, 0, 0, 0) url(../images/bgImg.png) no-repeat scroll 0 0;
+    }
+
+    .registration li.i2 .icon {
+        width: 117px;
+        height: 92px;
+        margin: 120px auto 0;
+        background-position: -100px -320px;
+    }
+
+    .registration li.i3 .icon {
+        width: 89px;
+        height: 112px;
+        margin: 112px auto 0;
+        background-position: -230px -320px;
+    }
+
+    .registration li.i4 .icon {
+        width: 133px;
+        height: 85px;
+        margin: 126px auto 0;
+        background-position: -330px -320px;
+    }
+
+    .registration li.i5 .icon {
+        width: 86px;
+        height: 98px;
+        margin: 119px auto 0;
+        background-position: -480px -320px;
+    }
+
+    .registration li.i6 .icon {
+        width: 133px;
+        height: 85px;
+        margin: 126px auto 0;
+        background-position: 0 -440px;
+    }
+
+    .registration li.i7 .icon {
+        width: 133px;
+        height: 85px;
+        margin: 126px auto 0;
+        background-position: -140px -440px;
+    }
+
+    .registration li.i8 .icon {
+        width: 120px;
+        height: 104px;
+        margin: 116px auto 0;
+        background-position: -280px -440px;
+    }
+
+    .registration li .icon {
+        display: block;
+    }
+
+    .bgImg {
+        background: rgba(0, 0, 0, 0) url(../images/bgImg.png) no-repeat scroll 0 0;
+    }
+
+    .registration li .num {
+        position: absolute;
+        width: 42px;
+        height: 32px;
+        top: 18px;
+        left: 14px;
+        line-height: 120px;
+        overflow: hidden;
+    }
+
+    .i1:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+    }
+
+    .i2:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+    }
+
+    .i3:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+    }
+
+    .i4:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+    }
+
+    .i5:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+    }
+
+    .i6:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+    }
+
+    .i7:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+    }
+
+    .i8:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, .4);
+    }
+
+    .zc {
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        background: #ffffff;
+        box-shadow: 0px 0px 10px #bfbfbf;
+        /* 宽度和高度需要相等 */
+    }
+
+    .ft :hover {
+        box-shadow: 0px 0px 20px #bfbfbf;
+    }
+
+    #zc1 {
+        background: url(../images/applicants_129.60669456067px_1243777_easyicon.net.png) no-repeat 24px 0;
+        background-position: center;
+        background-size: 90px;
+    }
+
+    #zc2 {
+        background: url(../images/document_98.562180579216px_1306487_easyicon.net.png) no-repeat 24px 0;
+        background-position: center;
+        background-size: 90px;
+    }
+
+    #zc3 {
+        background: url(../images/sheet_pen_133px_1182696_easyicon.net.png) no-repeat 24px 0;
+        background-position: center;
+        background-size: 90px;
+    }
+
+    #zc4 {
+        background: url(../images/file_128px_1309550_easyicon.net.png) no-repeat 24px 0;
+        background-position: center;
+        background-size: 90px;
+    }
+
+    #zc5 {
+        background: url(../images/delivery_box_163.33913043478px_1306397_easyicon.net.png) no-repeat 24px 0;
+        background-position: center;
+        background-size: 90px;
+    }
+
+    #zc6 {
+        background: url(../images/Announcements_128px_1186158_easyicon.net.png) no-repeat 24px 0;
+        background-position: center;
+        background-size: 90px;
+
+    }
+
+    .kan {
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        margin: 160px auto;
+        padding-left: 55px;
+        left: 0px;
+        right: 0;
+        color: #00a2d4;
+    }
+
+    #performance {
+        border-color: currentcolor #f0f0f0 #f0f0f0;
+    }
+
+    .fm {
+        position: relative;
+        width: 140px;
+        text-align: center;
+        line-height: 40px;
+        height: 40px;
+        background: #ffffff;
+        box-shadow: 0px 0px 10px #bfbfbf;
+    }
+
+    .zy :hover {
+        box-shadow: 0px 0px 20px #afaeae;
+    }
+</style>
+<body>
+<!--头部-->
+<!--<div th:replace="Repeat/Head :: myfooter"></div>-->
+<!--轮播图-->
+<!--<div class="layui-carousel" id="test1">
+    <div carousel-item>
+        <div><img src="/images/slider-1.png" width="100%"></div>
+        <div><img src="/images/slider-3.png" width="100%"></div>
+    </div>
+</div>-->
+<div data-v-d403c2f4="" data-v-83b9ca0c="" class="frame">
+    <div data-v-d403c2f4="" class="head">
+        <div data-v-d403c2f4="" class="location">
+            <div data-v-d403c2f4="" class="choose">
+                <div data-v-d403c2f4="" class="icon-sty">
+                </div>
+                <span data-v-d403c2f4=""><div role="tooltip" id="el-popover-511" aria-hidden="true"
+                                              class="el-popover el-popper" tabindex="0" style="display: none;"><!----><div
+                        data-v-d403c2f4="" class="province">
+                    <div data-v-d403c2f4="" class="province-box">
+                    </div></div> </div>
+                    <p data-v-d403c2f4=""class="change-city el-popover__reference"aria-describedby="el-popover-511"
+                                                                                               tabindex="0"></p></span>
+            </div>
+            <span data-v-d403c2f4=""><div role="tooltip" id="el-popover-262" aria-hidden="true"
+                                          class="el-popover el-popper" tabindex="0" style="display: none;"><!---->
+                <img
+                    data-v-d403c2f4="" src=""> </div><span
+                    data-v-d403c2f4="" class="el-popover__reference" aria-describedby="el-popover-262" tabindex="0"
+                    style="cursor: pointer;"></span></span>
+            <div data-v-d403c2f4="" style="margin-left: 57.5%;">
+                服务热线：
+                <span data-v-d403c2f4=""
+                      style="color: rgb(253, 101, 28); margin-right: 10px; font-size: 18px; font-weight: 500;">0551-6711-2826</span>
+                <span data-v-d403c2f4="" style="padding: 0px 0px 0px 10px; cursor: pointer;">莱米集团丨反馈</span></div>
+        </div>
+    </div>
+    <div data-v-d403c2f4="" style="width: 1200px; margin: 10px auto; background: rgb(255, 255, 255);">
+        <div data-v-d403c2f4="" style="margin: 20px auto; display: flex;">
+            <div data-v-d403c2f4="" style="margin-right: 30px;">
+                <img data-v-d403c2f4=""src="/images/login.png"
+                                                                     style="width:240px;/*width: 222px; height: 76px;*/ cursor: pointer;">
+            </div>
+
+            <div data-v-d403c2f4="" style="float: right; display: flex; margin-left: 70px;">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div data-v-7626485b="" data-v-83b9ca0c="" class="frame">
+    <div data-v-7626485b="" class="head-box">
+        <ul data-v-7626485b="" class="navigation_ul">
+            <div data-v-7626485b="" class="dropdown">
+                <span data-v-7626485b="" style="color: rgb(255, 255, 255);">服务分类</span>
+                <img data-v-7626485b=""
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAWAgMAAACu+BRhAAAACVBMVEUAAAD///////9zeKVjAAAAAnRSTlMAwO33D4gAAAAUSURBVAjXY8haBQIr4TSFgNbmAQANGRpf6mTrkQAAAABJRU5ErkJggg=="
+                     class="service-img">
+                <div style="z-index: 9999" data-v-7626485b="" class="dropdown-content otherPage">
+                    <div data-v-7626485b="" class="drop_down">
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">资质服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/Qualification/Case','_self')">资质案例</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/Qualification/agency','_self')">代办留言</p>
+                            </div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="">资质买卖</p> <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="">资质计算器</p></div>
+                        </div>
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">职称服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/List','_self')">一览表</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/Conditional_review','_self')">
+                                    条件审核</p></div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/perplex','_self')">申报困扰</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/Reporting_process','_self')">办理流程</p>
+                            </div>
+                        </div>
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">工程服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/user/Performance','_self')">工程业绩</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b=""></p></div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b=""></p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b=""></p></div>
+                        </div>
+                        <div data-v-7626485b=""><!---->
+                            <div data-v-7626485b="" class="option"><!----> <!----> <!----></div>
+                            <div data-v-7626485b="" class="option"><!----> <!----> <!----></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation activeTab">
+                <p data-v-7626485b="" class="tab" onclick="window.open('/','_self')">首页</p>
+                <div data-v-7626485b="" class="dropdown-navigation"></div>
+            </div>
+            <!--  <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab"></p>
+                  <div data-v-7626485b="" class="dropdown-navigation"></div>
+              </div>-->
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">资质服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation"  onclick="window.open('/Qualification/Case','_self')"><span data-v-7626485b="">资质案例</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/Qualification/agency','_self')"><span data-v-7626485b="">代办留言</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('https://yzf.qq.com/xv/web/static/chat/index.html?sign=37ef9b97867553c27311caec1ab2e237e9d632de2be81485e4a11639ce78c6ef93bb9e557e67ebbaa6fbab92b7d8eff0a74cc497')"><span data-v-7626485b="">资质买卖</span></div>
+                    <div data-v-7626485b="" class="drop_navigation"><span data-v-7626485b="">资质计算器</span></div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">职称服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation"  onclick="window.open('/TitleCenter/List','_self')"><span data-v-7626485b="">一览表</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/Conditional_review','_self')"><span data-v-7626485b="">条件审核</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/perplex','_self')"><span data-v-7626485b="">申报困扰</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/Reporting_process','_self')"><span data-v-7626485b="">办理流程</span></div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">工程服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/user/Performance','_self')">
+                        <span data-v-7626485b="">工程业绩</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-v-7626485b="" class="navigation">
+                <p data-v-7626485b="" onclick="window.open('/user/Contact_us','_self')" class="tab">联系我们</p>
+                <div data-v-7626485b="" class="dropdown-navigation"></div>
+            </div>
+        </ul>
+    </div>
+    <div data-v-d170166e="" data-v-7626485b="" class="home_frame">
+        <div data-v-d170166e="" class="top_img">
+            <div data-v-5497ad5a="" data-v-d170166e="" class="banner">
+                <div data-v-5497ad5a="" class="item"><img data-v-5497ad5a=""
+                                                          src="/images/index.jpeg"
+                                                          style="width: 100%; height: 440px;"></div> <!----></div>
+        </div>
+    </div>
+    <div class="advantage">
+        <h2>业务范围
+            <span>OUR SERVICES</span>
+        </h2>
+    </div>
+    <div class="serwrap2" style="overflow:hidden;">
+        <ul class="service-list2 mt20">
+            <li class="tc">
+                <a href="/db/zcb/" title="施工总承包资质" class="f14 black b pt10 pb10">
+                    <div class="pic t2 in-b ti">
+                    </div>
+                    施工总承包资质</a>
+                <p class="lh18">
+                    施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                </p>
+            </li>
+            <li class="tc">
+                <a href="/db/zycb/" title="施工专业承包资质" class="f14 black b pt10 pb10">
+                    <div class="pic t3 in-b ti">
+                    </div>
+                    施工专业承包资质</a>
+                <p class="lh18">
+                    施工专业承包资质共计36项
+                </p>
+            </li>
+            <li class="tc">
+                <a href="/db/718.html" title="施工劳务资质" class="f14 black b pt10 pb10">
+                    <div class="pic t4 in-b ti">
+                    </div>
+                    建筑施工劳务资质</a>
+                <p class="lh18">
+                    2020施工劳务资质办理详情及办理材料
+                </p>
+            </li>
+            <li class="tc">
+                <a href="/db/hysj/" title="建筑行业设计资质" class="f14 black b pt10 pb10">
+                    <div class="pic t10 in-b ti">
+                    </div>
+                    代办建筑资质升级</a>
+                <p class="lh18">
+                    资质升级业务办流程与资质办理流程相同
+                </p>
+            </li>
+            <li class="tc">
+                <a href="/db/kcsj/" title="建筑专项设计资质" class="f14 black b pt10 pb10">
+                    <div class="pic t8 in-b ti">
+                    </div>
+                    建筑专项设计资质</a>
+                <p class="lh18">
+                    专项设计资质人员配备表详情一览
+                </p>
+            </li>
+            <li class="tc">
+                <a href="/db/2205.html" title="职称办理" class="f14 black b pt10 pb10">
+                    <div class="pic t5 in-b ti">
+                    </div>
+                    职称办理</a>
+                <p class="lh18">
+                    专业办理中高级职称
+                </p>
+            </li>
+            <li class="tc">
+                <a href="/db/792.html" title="安全生产许可证" class="f14 black b pt10 pb10">
+                    <div class="pic t6 in-b ti">
+                    </div>
+
+                </a>
+                <p class="lh18">
+
+                </p>
+            </li>
+            <li class="tc">
+                <a href="/jzgs/kjfu/" title="" class="f14 black b pt10 pb10">
+                    <div class="pic t7 in-b ti">
+                    </div>
+
+                </a>
+                <p class="lh18">
+
+                </p>
+            </li>
+            <li class="tc">
+                <a href="/jzgs/gsfu/" title="" class="f14 black b pt10 pb10">
+                    <div class="pic t9 in-b ti">
+                    </div>
+
+                </a>
+                <p class="lh18">
+
+                </p>
+                <p></p>
+            </li>
+            <li class="tc">
+                <a href="/jzgs/xkzfu/" title="" class="">
+                    <div class="pic t1 in-b ti"></div>
+                </a>
+                <p class="lh18">
+
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="advantage" style="padding-top:10px;"><h2>资质标准<span>Standard</span></h2></div>
+    <div class="gszc-main">
+        <ul class="gszc-ul5">
+            <li>
+                <b>施工总承包企业资质</b>
+                <p><a href="">机电工程施工总承包资质标准</a><br>
+                    <a href="">通信工程施工总承包资质办理标准</a><br>
+                    <a href="">市政公用工程施工总承包资质标准</a><br>
+                    <a href="">矿山工程施工总承包资质标准</a><br>
+                    <a href="">电力工程施工总承包资质标准</a><br>
+                    <a href="">水利水电工程施工总承包标准</a><br>
+                    <a href="">公路工程施工总承包资质标准</a><br>
+                    <a href="">建筑工程施工总承包资质标准</a><br>
+                </p>
+                <a href="https://yzf.qq.com/xv/web/static/chat/index.html?sign=37ef9b97867553c27311caec1ab2e237e9d632de2be81485e4a11639ce78c6ef93bb9e557e67ebbaa6fbab92b7d8eff0a74cc497" target="_blank" class="zixuna js-openchat" rel="nofollow">查看更多</a>
+            </li>
+            <li>
+                <b>专业承包企业资质</b>
+                <p><a href="">环保工程专业承包企业资质等级标准</a><br>
+                    <a href="">输变电工程专业承包资质标准</a><br>
+                    <a href="">建筑幕墙工程专业承包资质标准</a><br>
+                    <a href="">机电设备安装工程企业资质标准</a><br>
+                    <a href="">建筑装修装饰工程企业资质标准</a><br>
+                    <a href="">钢结构工程专业承包资质标准</a><br>
+                    <a href="">消防设施工程企业资质等级标准</a><br>
+                    <a href="">地基基础工程专业承包资质标准</a><br>
+                </p>
+                <a href="https://yzf.qq.com/xv/web/static/chat/index.html?sign=37ef9b97867553c27311caec1ab2e237e9d632de2be81485e4a11639ce78c6ef93bb9e557e67ebbaa6fbab92b7d8eff0a74cc497" target="_blank" class="zixuna js-openchat" rel="nofollow">查看更多</a>
+            </li>
+            <li>
+                <b>建筑设计资质标准</b>
+                <p><a href="">风景园林工程设计专项资质标准</a><br>
+                    <a href="">工程监理企业资质等级划分标准</a><br>
+                    <a href="">工程勘察资质分级标准</a><br>
+                    <a href="">工程造价咨询企业资质等级标准</a><br>
+                    <a href="">工程招标代理机构资格标准</a><br>
+                    <a href="">环境工程设计专项资质标准</a><br>
+                    <a href="">建筑幕墙工程设计专项资质分级标准</a><br>
+                    <a href="">建筑智能化系统设计专项资质标准</a><br>
+                </p>
+                <a href="https://yzf.qq.com/xv/web/static/chat/index.html?sign=37ef9b97867553c27311caec1ab2e237e9d632de2be81485e4a11639ce78c6ef93bb9e557e67ebbaa6fbab92b7d8eff0a74cc497" target="_blank"class="zixuna js-openchat" rel="nofollow">查看更多</a>
+            </li>
+            <li class="last">
+                <b>劳务分包资质标准</b>
+                <p><a href="">五、劳务资质办理流程</a><br>
+                    <a href="">四、建筑业企业资质变更手续所需资料</a><br>
+                    <a href="">三、申请施工劳务资质材料要求</a><br>
+                    <a href="">二、劳务资质申报材料清单</a><br>
+                    <a href="">五、劳务资质办理流程</a><br>
+                    <a href="">四、建筑业企业资质变更手续所需资料</a><br>
+                    <a href="">三、申请施工劳务资质材料要求</a><br>
+                    <a href="">二、劳务资质申报材料清单</a><br>
+                </p>
+                <a href="https://yzf.qq.com/xv/web/static/chat/index.html?sign=37ef9b97867553c27311caec1ab2e237e9d632de2be81485e4a11639ce78c6ef93bb9e557e67ebbaa6fbab92b7d8eff0a74cc497" target="_blank" class="zixuna js-openchat" rel="nofollow">查看更多</a>
+            </li>
+        </ul>
+        <a type="button" href="/lib/File/资质标准.docx" download="资质标准.docx" style="margin-left:585px;color: #01AAED"
+           class="layui-btn layui-btn-primary">
+            <i class="layui-icon layui-icon-download-circle"></i> 下载附件
+        </a>
+
+    </div>
+
+
+    <section class="block f1Bg">
+        <div class="item2">
+            <div class="registration">
+                <h2>办理流程<span>Processing process</span></h2>
+                <ul>
+                    <li class="first">
+                        <h3>办理业务只需三个月<span>即可全套办理完成</span>相比企业自己办理要快8个月，快速下证，提前拿下工程承包权！</h3>
+                        <p>Customer satisfy is the eternal pursue of corporation!</p>
+                        <a href="" class="bgImg addBtn"></a>
+                    </li>
+                    <li class="i1">
+                        <i class="bgImg num">01</i>
+                        <i class="bgImg icon"></i>
+                        <p>提供资料</p>
+                    </li>
+                    <li class="i2">
+                        <i class="bgImg num">02</i>
+                        <i class="bgImg icon"></i>
+                        <p>沟通合作</p>
+                    </li>
+                    <li class="i3">
+                        <i class="bgImg num">03</i>
+                        <i class="bgImg icon"></i>
+                        <p>签订合同</p>
+                    </li>
+                    <li class="i4">
+                        <i class="bgImg num">04</i>
+                        <i class="bgImg icon"></i>
+                        <p>整理材料</p>
+                    </li>
+                    <li class="i5">
+                        <i class="bgImg num">05</i>
+                        <i class="bgImg icon"></i>
+                        <p>人员配备</p>
+                    </li>
+                    <li class="i6">
+                        <i class="bgImg num">06</i>
+                        <i class="bgImg icon"></i>
+                        <p>组卷申报</p>
+                    </li>
+                    <li class="i7">
+                        <i class="bgImg num">07</i>
+                        <i class="bgImg icon"></i>
+                        <p>审核通过</p>
+                    </li>
+                    <li class="i8">
+                        <i class="bgImg num">08</i>
+                        <i class="bgImg icon"></i>
+                        <p>领取证书</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="advantage">
+        <h2>职称专业
+            <span>PROFESSIONAL TITLE</span>
+        </h2>
+    </div>
+    <div class="serwrap2" style="overflow:hidden;width:1200px">
+        <ul class="service-list2 mt20">
+            <li class="zy" style="height: 100px;">
+                <a href="" title="" class="fm">
+                    建筑工程专业</a>
+                <!--<p class="lh18">
+                    施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                </p>-->
+            </li>
+            <li class="zy" style="height: 100px;">
+                <a href="" title="" class="fm">
+                    机械工程专业
+                </a>
+                <!--<p class="lh18">
+                    施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                </p>-->
+            </li>
+            <li class="zy" style="height: 100px;">
+                <a href="" title="" class="fm">
+                    电子工程专业
+                </a>
+                <!--<p class="lh18">
+                    施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                </p>-->
+            </li>
+            <li class="zy" style="height: 100px;">
+                <a href="" title="" class="fm">
+                    交通工程专业
+                </a>
+                <!--<p class="lh18">
+                    施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                </p>-->
+            </li>
+            <li class="zy" style="height: 100px;">
+                <a href="" title="" class="fm">
+                    石化工程专业
+                </a>
+                <!--<p class="lh18">
+                    施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                </p>-->
+            </li>
+            <li class="zy" style="height: 100px;">
+                <a href="" title="" class="fm">
+                    测绘工程专业
+                </a>
+                <!--<p class="lh18">
+                    施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                </p>-->
+            </li>
+            <li class="zy" style="height: 100px;">
+                <a href="" title="" class="fm">
+                    环保工程专业
+                </a>
+                <!--<p class="lh18">
+                    施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                </p>-->
+            </li>
+        </ul>
+        <div class="advantage">
+            <a class="kan" href="/TitleCenter/List">详情职称查看</a>
+        </div>
+    </div>
+    <div class="advantage">
+        <h2>申报流程
+            <span>REPORTING PROCESS</span>
+        </h2>
+    </div>
+    <div class="serwrap2" style="overflow:hidden;width:1200px">
+        <ul class="service-list2 mt20">
+            <li class="tc" style="width: 115px;">
+                <a href="/db/zcb/" title="" class="ft">
+                    <div class="zc" id="zc1">
+                    </div>
+                    条件审核</a>
+                <!--<p class="lh18">
+                    施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                </p>-->
+            </li>
+            <li class="tc" style="width: 115px;">
+                <a href="/db/zcb/" title="" class="ft">
+                    <div class="zc" id="zc2">
+
+                    </div>
+                    基础资料准备</a>
+                <!-- <p class="lh18">
+                     施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                 </p>-->
+            </li>
+            <li class="tc" style="width: 115px;">
+                <a href="/db/zcb/" title="" class="ft">
+                    <div class="zc" id="zc3">
+
+                    </div>
+                    报名申请</a>
+                <!-- <p class="lh18">
+                     施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                 </p>-->
+            </li>
+            <li class="tc" style="width: 115px;">
+                <a href="/db/zcb/" title="" class="ft">
+                    <div class="zc" id="zc4">
+
+                    </div>
+                    申报材料明细</a>
+                <!-- <p class="lh18">
+                     施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                 </p>-->
+            </li>
+            <li class="tc" style="width: 115px;">
+                <a href="/db/zcb/" title="" class="ft">
+                    <div class="zc" id="zc5">
+
+                    </div>
+                    材料送审</a>
+                <!-- <p class="lh18">
+                     施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                 </p>-->
+            </li>
+            <li class="tc" style="width:115px;">
+                <a href="/db/zcb/" title="" class="ft">
+                    <div class="zc" id="zc6">
+                    </div>
+                    通过名单公示</a>
+                <!-- <p class="lh18">
+                     施工单位资质分总承包一、二、三级。总承包资质序列一共有12项
+                 </p>-->
+            </li>
+
+        </ul>
+        <div class="advantage">
+            <a class="kan" href="/TitleCenter/Reporting_process">详情流程查看</a>
+        </div>
+    </div>
+    <div class="advantage">
+        <h2>业绩
+            <span>PERFORMANCE</span>
+        </h2>
+    </div>
+    <div class="serwrap2" style="overflow:hidden;">
+        <div class="gszc-main">
+            <ul class="gszc-ul5">
+                <li>
+                    <b>业绩的重要性</b>
+                    <p style="line-height: 25px;">
+                        业绩，是建筑企业的“招牌”和“通行证”，是建筑企业的“命根子”。没有业绩，什么都无从谈起。资质申报、承接项目、招投标等环节能否顺利进行，企业业绩的考核举足轻重。
+                    </p>
+                    <!--   <a href="/zzsp/sgzcb/" class="zixuna js-openchat" rel="nofollow">查看更多</a>-->
+                </li>
+                <li>
+                    <b>业绩的用途</b>
+                    <p style="line-height: 25px;">首先我们要搞清楚，录入的业绩是用作什么的?建筑企业业绩最大的作用在两方面：<br>
+                        1、是招投标过程中，为响应招标文件要求，体现企业管理能力和同类项目的施工经验，此可作为一种<br>
+                        2、是在企业资质中，体现出一种施工经验的累积，当你达到一定数量后，你可以向更高级别的资质申请;而我们现在所谓的录入，就是第二种，作为企业以后资质升级的一种。
+                    </p>
+                    <!--   <a href="/zzsp/sgzcb/" class="zixuna js-openchat" rel="nofollow">查看更多</a>-->
+                </li>
+                <li>
+                    <b>业绩如何补录?</b>
+                    <p style="line-height: 25px;">
+                        住建部在《关于启用全国建筑市场监管公共服务平台的通知》(建市综函[2016]122号)中要求：各地要完善工程项目历史数据补录办法。
+                        但是，如何进行“历史业绩补录”?需要注意哪些问题?住建部并没有具体的文件出台。
+                    </p>
+                    <!--   <a href="/zzsp/sgzcb/" class="zixuna js-openchat" rel="nofollow">查看更多</a>-->
+                </li>
+                <li>
+                    <b>需填报、上传的资料</b>
+                    <p style="line-height: 25px;">
+                        (1)项目基本信息
+                        (2)施工图审查信息
+                        (3)招投标信息
+                        (4)合同备案信息
+                        (5)施工许可信息
+                        (6)质量安全监督信息
+                        (7)竣工验收信息
+                        (8)各方责任主体信息
+                        以上信息要填报外，还需要上传以下资料：<br>
+                        (1)中标(选)通知书
+                        (2)加盖合同备案章的合同
+                        (3)竣工验收报告
+                        (4)审计结算报告书
+                        (5)市政类别的项目还需要上传有技术指标的竣工图纸
+                        (6)承诺书，对上传上报资料的真实性作出承诺。
+                    </p>
+                    <!--   <a href="/zzsp/sgzcb/" class="zixuna js-openchat" rel="nofollow">查看更多</a>-->
+                </li>
+
+                <li>
+                    <br>
+                    <b>业绩如何补录?</b>
+                    <p style="line-height: 25px;">
+                        住建部在《关于启用全国建筑市场监管公共服务平台的通知》(建市综函[2016]122号)中要求：各地要完善工程项目历史数据补录办法。
+                        但是，如何进行“历史业绩补录”?需要注意哪些问题?住建部并没有具体的文件出台。
+                    </p>
+                    <!--   <a href="/zzsp/sgzcb/" class="zixuna js-openchat" rel="nofollow">查看更多</a>-->
+                </li>
+                <li>
+                    <br>
+                    <b>录入那些时间段的业绩</b>
+                    <p style="line-height: 25px;">
+                        根据《建筑业企业资质标准》要求，建筑工程施工总承包(含建筑工程施工总承包序列下的专业承包)升级需要提供近五年完成的业绩，市政公用工程施工总承包(含建筑市政公用工程施工总承包序列下的专业承包)升级需要提供近十年完成的业绩，所以企业不用将所有业绩都录入进“全国建筑市场建管与诚信信息发布平台”而是根据企业的需要进行选择性的录入，毕竟录入一个项目需要的信息过于全面，会耗费企业太多的时间。
+                    </p>
+                    <!--   <a href="/zzsp/sgzcb/" class="zixuna js-openchat" rel="nofollow">查看更多</a>-->
+                </li>
+            </ul>
+         <a style="margin-left: 585px;color:#01AAED" href="/user/Performance">详情业绩查看</a>
+        </div>
+    </div>
+</div>
+
+
+<!--底部-->
+<div th:replace="Repeat/Bottom :: myfooter"></div>
+<!--左侧悬浮窗-->
+<div th:replace="Repeat/Right :: myfooter"></div>
+<!--js-->
+<script src="/layui/layui.js"></script>
+<script>
+    layui.use('element', function () {
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+        //监听导航点击
+        element.on('nav(demo)', function (elem) {
+            //console.log(elem)
+            layer.msg(elem.text());
+        });
+    });
+</script>
+
+<script>
+    layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            , width: '100%' //设置容器宽度
+            , height: '500px'
+            , arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+</body>
+</html>

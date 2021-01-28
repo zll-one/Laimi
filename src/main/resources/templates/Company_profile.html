@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwv.thymeLeaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司简介</title>
+    <link rel="stylesheet" href="/layui/css/layui.css" media="all">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link href="/css/sg.css" rel="stylesheet">
+    <link href="/css/companyprofile.css" rel="stylesheet">
+    <link href="/css/lianxi.css" rel="stylesheet">
+    <link href="/css/global.css" rel="stylesheet">
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/layui/layui.js"></script>
+</head>
+<style>
+    dt{float:left;}
+</style>
+<style>
+    .frame .head-box[data-v-7626485b] {
+        width: 100%;
+        display: flex;
+        z-index: 1;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .frame .navigation_ul[data-v-7626485b] {
+        width: 1200px;
+        min-width: 1200px;
+        height: 40px;
+        margin: 10px auto 0;
+        padding-left: 0;
+        display: flex;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    .frame[data-v-7626485b] {
+        width: 100%;
+        font-family: Microsoft YaHei;
+        min-height: 669px;
+    }
+
+    .frame .dropdown[data-v-7626485b] {
+        text-align: center;
+        display: inline-block;
+        background-color: #2a65ef;
+        min-width: 220px;
+        padding: 11px 49px;
+    }
+
+    .frame .dropdown .service-img[data-v-7626485b] {
+        width: 14px;
+        height: 13px;
+        margin-left: 3px;
+    }
+
+    .frame .dropdown-content[data-v-7626485b] {
+        width: 100%;
+        display: none;
+        position: absolute;
+        background: rgba(12, 21, 38, .85);
+        color: #fff;
+        margin-top: 5px;
+        margin-left: -49px;
+        width: 220px;
+    }
+
+    .frame .otherPage[data-v-7626485b] {
+        display: block !important;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    div {
+        display: block;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
+    .frame .dropdown-content .drop_down .class_title[data-v-7626485b] {
+        color: #ffc375;
+        padding-top: 20px;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    user agent stylesheet
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+        margin: 8px 17px 0;
+        display: flex;
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    div {
+        display: block;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer;
+    }
+
+    element.style {
+    }
+
+    *, :after, :before {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer;
+    }
+
+    .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+        margin: 8px 17px 0;
+        display: flex;
+    }
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .activeTab[data-v-7626485b] {
+        color: #36a6fe;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px;
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px;
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .property-style[data-v-7626485b] {
+        line-height: 40px;
+        color: #222;
+        text-decoration: none;
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        /* line-height: 40px; */
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px;
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+</style>
+<style type="text/css">
+    .frame[data-v-7626485b] {
+        width: 100%;
+        font-family: Microsoft YaHei;
+        min-height: 669px
+    }
+
+    .frame .head-box[data-v-7626485b] {
+        width: 100%;
+        display: flex;
+        z-index: 1
+    }
+
+    .frame .dropdown[data-v-7626485b] {
+        text-align: center;
+        display: inline-block;
+        background-color: #2a65ef;
+        min-width: 220px;
+        padding: 11px 49px
+    }
+
+    .frame .dropdown .service-img[data-v-7626485b] {
+        width: 14px;
+        height: 13px;
+        margin-left: 3px
+    }
+
+    .frame .dropdown:hover .dropdown-content[data-v-7626485b] {
+        display: block
+    }
+
+    .frame .otherPage[data-v-7626485b] {
+        display: block !important
+    }
+
+
+
+    .frame .dropdown-content .drop_down[data-v-7626485b] {
+        width: 100%;
+        height: 440px;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center
+    }
+
+    .frame .dropdown-content .drop_down .class_title[data-v-7626485b] {
+        color: #ffc375;
+        padding-top: 20px
+    }
+
+    .frame .dropdown-content .drop_down .option[data-v-7626485b] {
+        margin: 8px 17px 0;
+        display: flex
+    }
+
+    .frame .dropdown-content .drop_down .option p[data-v-7626485b] {
+        width: 90px;
+        margin: 0 auto;
+        color: #dedede;
+        cursor: pointer
+    }
+
+    .frame .activeStyle[data-v-7626485b] {
+        color: #fff;
+        background: #097ce1
+    }
+
+    .frame .activeTab[data-v-7626485b] {
+        color: #36a6fe
+    }
+
+    .frame .listSty[data-v-7626485b] {
+        background: #36a6fe
+    }
+
+    .frame .navigation_ul[data-v-7626485b] {
+        width: 1200px;
+        min-width: 1200px;
+        height: 40px;
+        margin: 10px auto 0;
+        padding-left: 0;
+        display: flex
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b] {
+        min-width: 163px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block
+    }
+
+    .frame .navigation_ul .tab[data-v-7626485b] {
+        line-height: 40px
+    }
+
+    .frame .navigation_ul .dropdown-navigation[data-v-7626485b] {
+        display: none;
+        position: absolute;
+        background-color: #36a6fe;
+        color: #fff;
+        min-width: 163px;
+        z-index: 9999
+    }
+
+    .frame .navigation_ul .dropdown-navigation .drop_navigation[data-v-7626485b] {
+        cursor: pointer;
+        width: 100%;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        border-top: 1px solid #fff
+    }
+
+    .frame .navigation_ul .dropdown-navigation .drop_navigation[data-v-7626485b]:hover {
+        background: #097ce1
+    }
+
+    .frame .navigation_ul .property-style[data-v-7626485b] {
+        line-height: 40px;
+        color: #222;
+        text-decoration: none
+    }
+
+    .frame .navigation_ul .navigation[data-v-7626485b]:hover {
+        color: #fff !important;
+        background: #36a6fe
+    }
+
+    .frame .navigation_ul .navigation:hover .dropdown-navigation[data-v-7626485b] {
+        display: block
+    }
+
+    .frame .navigation_ul .navigation:hover .property-style[data-v-7626485b] {
+        color: #fff
+    }
+
+    .frame .left_navigate[data-v-7626485b] {
+        position: fixed;
+        margin-left: 150px
+    }
+
+    .frame .left_navigate .left-box[data-v-7626485b]:hover {
+        background: #36a6fe
+    }
+
+    .frame .left_navigate .top[data-v-7626485b] {
+        padding: 9px;
+        cursor: pointer;
+        font-size: 14px;
+        background: #36a6fe
+    }
+
+    @media screen and (max-width: 1760px) {
+        .frame .left_navigate[data-v-7626485b] {
+            margin-left: 0
+        }
+    }
+
+    @media screen and (max-width: 1317px) {
+        .frame .left_navigate[data-v-7626485b] {
+            display: none
+        }
+    }
+</style>
+<style type="text/css">
+    .frame[data-v-a330e54a] {
+        font-size: 14px;
+        height: 46px
+    }
+
+    .frame[data-v-a330e54a], .frame .box[data-v-a330e54a] {
+        width: 100%;
+        background: #3d3e3e
+    }
+
+    .frame .box[data-v-a330e54a] {
+        position: fixed;
+        z-index: 9999
+    }
+
+    .frame .box .head-content[data-v-a330e54a] {
+        height: 50px;
+        line-height: 46px;
+        width: 1200px;
+        margin: 0 auto;
+        display: flex
+    }
+
+    .frame .box .head-content .choose[data-v-a330e54a] {
+        display: flex
+    }
+
+    .frame .box .head-content .choose .location[data-v-a330e54a] {
+        color: #fff;
+        width: 75px;
+        margin-left: 30px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1
+    }
+
+    .frame .search[data-v-a330e54a] {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 20px;
+        border: 1px solid #5d5d5d;
+        background-color: #5d5d5d;
+        color: #fff;
+        margin: auto 0 auto -100px;
+        padding-left: 30px
+    }
+
+    .frame .search[data-v-a330e54a], .frame .user-info[data-v-a330e54a] {
+        display: flex;
+        cursor: pointer
+    }
+
+    .frame .user-info .username[data-v-a330e54a] {
+        width: 75px;
+        color: #36a6fe;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1
+    }
+
+    .frame .search_input[data-v-a330e54a] {
+        color: #fff;
+        width: 314px;
+        height: 30px;
+        margin: auto 0;
+        border-radius: 20px;
+        background: #5d5d5d;
+        border: 1px solid #5d5d5d;
+        outline: one;
+        padding-left: 15px;
+        padding-right: 100px;
+        font-size: 16px;
+        overflow: hidden
+    }
+
+    .frame input[data-v-a330e54a]:focus {
+        outline: 0;
+        padding-left: 15px
+    }</style>
+<script>
+    $(document).ready(function(){
+        $(".drop_down").hide();
+        $(".dropdown").mouseover(function(){
+            $(".drop_down").show();
+            $(".dropdown").mouseout(function(){
+                $(".drop_down").hide();
+            });
+        });
+    })
+</script>
+<body>
+<!--头部-->
+<div data-v-a330e54a="" data-v-83b9ca0c="" class="frame">
+    <div data-v-a330e54a="" class="box" style="z-index: 19999">
+        <div data-v-a330e54a="" class="head-content">
+            <img data-v-a330e54a="" src="/images/logo_img_sc.png"
+                 style="width:150px;height: 50px; color: rgb(255, 255, 255); margin: auto 0px; cursor: pointer;">
+            <div data-v-a330e54a="" style="margin-left: 600px"class="choose">
+            </div>
+            <p data-v-a330e54a="" style="color: rgb(255, 255, 255); padding: 0px 30px; line-height: 46px;">服务热线：<span
+                    data-v-a330e54a=""
+                    style="color:#FF5722; font-size: 18px; font-weight: 500;">0551-6711-2826</span></p>
+            <div data-v-a330e54a="" style="display: flex; margin-left: 20px;">
+
+            </div>
+
+            <p data-v-a330e54a=""
+               style="color: rgb(255, 255, 255); padding-left: 30px; cursor: pointer; line-height: 46px;">莱米集团丨反馈</p>
+        </div>
+    </div>
+</div>
+
+<div data-v-7626485b="" data-v-83b9ca0c="" class="frame">
+    <div data-v-7626485b="" class="head-box">
+        <ul data-v-7626485b="" class="navigation_ul">
+            <div data-v-7626485b="" class="dropdown">
+                <span data-v-7626485b="" style="color: rgb(255, 255, 255);">服务分类</span>
+                <img data-v-7626485b=""
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAWAgMAAACu+BRhAAAACVBMVEUAAAD///////9zeKVjAAAAAnRSTlMAwO33D4gAAAAUSURBVAjXY8haBQIr4TSFgNbmAQANGRpf6mTrkQAAAABJRU5ErkJggg=="
+                     class="service-img">
+                <div style="z-index: 9999" data-v-7626485b="" class="dropdown-content otherPage">
+                    <div data-v-7626485b="" class="drop_down">
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">资质服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/Qualification/Case','_self')">资质案例</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/Qualification/agency','_self')">代办留言</p>
+                            </div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="">资质买卖</p> <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="">资质计算器</p></div>
+                        </div>
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">职称服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/List','_self')">一览表</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/Conditional_review','_self')">
+                                    条件审核</p></div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/perplex','_self')">申报困扰</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b="" onclick="window.open('/TitleCenter/Reporting_process','_self')">办理流程</p>
+                            </div>
+                        </div>
+                        <div data-v-7626485b="">
+                            <p data-v-7626485b="" class="class_title">工程服务</p>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b="" onclick="window.open('/user/Performance','_self')">工程业绩</p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b=""></p></div>
+                            <div data-v-7626485b="" class="option">
+                                <p data-v-7626485b=""></p>
+                                <span data-v-7626485b="">|</span>
+                                <p data-v-7626485b=""></p></div>
+                        </div>
+                        <div data-v-7626485b=""><!---->
+                            <div data-v-7626485b="" class="option"><!----> <!----> <!----></div>
+                            <div data-v-7626485b="" class="option"><!----> <!----> <!----></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation">
+                <p data-v-7626485b="" class="tab" onclick="window.open('/','_self')">首页</p>
+                <div data-v-7626485b="" class="dropdown-navigation"></div>
+            </div>
+            <!--  <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab"></p>
+                  <div data-v-7626485b="" class="dropdown-navigation"></div>
+              </div>-->
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">资质服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation"  onclick="window.open('/Qualification/Case','_self')"><span data-v-7626485b="">资质案例</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/Qualification/agency','_self')"><span data-v-7626485b="">代办留言</span></div>
+                    <div data-v-7626485b="" class="drop_navigation"><span data-v-7626485b="">资质买卖</span></div>
+                    <div data-v-7626485b="" class="drop_navigation"><span data-v-7626485b="">资质计算器</span></div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">职称服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation"  onclick="window.open('/TitleCenter/List','_self')"><span data-v-7626485b="">一览表</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/Conditional_review','_self')"><span data-v-7626485b="">条件审核</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/perplex','_self')"><span data-v-7626485b="">申报困扰</span></div>
+                    <div data-v-7626485b="" class="drop_navigation" onclick="window.open('/TitleCenter/Reporting_process','_self')"><span data-v-7626485b="">办理流程</span></div>
+                </div>
+            </div>
+            <div data-v-7626485b="" class="navigation"><p data-v-7626485b="" class="tab">工程服务</p>
+                <div data-v-7626485b="" class="dropdown-navigation">
+                    <div data-v-7626485b="" class="drop_navigation"><span data-v-7626485b="" onclick="window.open('/user/Performance','_self')">工程业绩</span></div>
+
+                </div>
+            </div>
+
+            <div data-v-7626485b="" class="navigation  activeTab">
+                <p data-v-7626485b="" onclick="window.open('/user/Contact_us','_self')" class="tab">联系我们</p>
+                <div data-v-7626485b="" class="dropdown-navigation"></div>
+            </div>
+        </ul>
+    </div>
+
+    <div data-v-d170166e="" data-v-7626485b="" class="home_frame" >
+        <div data-v-d170166e="" class="top_img" >
+            <div data-v-5497ad5a="" style="height:440px" data-v-d170166e="" class="banner">
+                <div data-v-5497ad5a="" class="item">
+                    <img data-v-5497ad5a=""
+                         src="/images/23434.jpg"
+                         style="width: 100%; height: 440px;">
+
+
+
+                </div> <!---->
+            </div>
+        </div>
+
+    </div>
+    <div class="wid1035 clearfix" style="width: 1200px; margin: auto;">
+        <div class="know_nav boxshadow fl" id="leftNav">
+            <div class="know_navtitle font18" style=" padding-left: 25px;">认识莱米</div>
+            <ul>
+                <li><a href="/user/Company_profile" class="know_navsure">公司简介</a></li>
+                <li><a href="/user/Enterprise_culture">企业文化</a></li>
+                <li><a href="/user/Contact_us" id="contact" >联系我们</a></li>
+            </ul>
+        </div>
+        <div id ="content">
+        </div>
+
+        <div class="profile boxshadow fr">
+            <div class="profile_title">公司简介</div>
+            <img src="/images/profileline.png" width="735" height="2">
+            <div class="padtop_30">
+                <dl class="contact_con clearfix" >
+                    <dd><p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;莱米集团作为一家智力整合与支持服务机构，我们具有广泛的智力渠道，丰富的信息资源和良好的人才资源，与省内外诸多企事业单位建立了多方面的合作关系。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司拥有良好的教育背景、企业管理经验丰富，精通人力资源开发、高管人才培训咨询等方面的猎头顾问、咨询顾问和讲师。以帮助企业提升管理水准、改善企业生命力和活力。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安徽莱米建设投资集团有限公司（以下简称公司）坐落于风景优美的大湖名城-合肥，注册资金666万。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司主要管理团队人员来自大型国有企业，其中持有建造师资格证书人员10人以上，持有中、高级职称证书人员10人以上。公司坚持高品质、低成本、重信用、勇开拓的经营方针，获得了工程所在地政府主管部门、建设单位、总承包单位的一致好评。公司多次荣获、国家级“守合同、重信用”企业、全国“AAA信用等级企业”、“优秀建筑业企业”等称号；通过了质量管理体系、环境管理体系、职业健康与安全管理体系标准“三标一体”和建筑行业ISO50430标准认证。<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020年公司更是立足长远发展，提前布局市场，坚持“以高质量谋市场”的品牌发展战略，内强管理，外树形象，呈现出积极向上、快速发展的良好势头。未来，公司将不断提高管理水平和技术研发水平，不断优化管理系统和管理流程，持续为客户和社会创造价值。
+
+                    </p>
+
+                    </dd>
+                </dl>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--底部-->
+<div th:replace="Repeat/Bottom :: myfooter"></div>
+<!--右侧悬浮窗-->
+<div th:replace="Repeat/Right :: myfooter"></div>
+</body>
+</html>
